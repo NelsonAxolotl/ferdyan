@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  background: rgb(241, 241, 241);
+}
+
+.main h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 5rem;
+  padding-top: 180px;
+  font-weight: bold;
+  color: rgba(23, 22, 22, 0.811);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slide-in {
+  position: relative;
+  animation: slideIn 2s ease-out forwards;
+  opacity: 0; /* Initial opacity */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.underline {
+  width: 0; /* Initialement, la largeur est de 0 */
+  height: 1px; /* Épaisseur de la ligne */
+  background-color: rgb(74, 74, 74); /* Couleur de la ligne */
+  margin: 10px 0; /* Marge autour de la ligne */
+  animation: underlineGrow 1.5s ease-out forwards; /* Animation pour faire grandir la ligne */
+  animation-delay: 1.5s; /* Délai avant que l'animation commence */
+}
+
+@keyframes underlineGrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 20%; /* La ligne grandit jusqu'à 100% de sa taille */
+  }
+}
+
+.picma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.propos p {
+  padding: 0 30px;
+  max-width: 800px;
+  text-align: justify;
+  line-height: 26px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+  color: rgb(79, 76, 76);
+}
+
+.picma img {
+  width: auto;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.picma img:hover {
+  transform: scale(1.01);
+}
+
+.propos p:nth-child(1) {
+  animation-delay: 0.9s; /* Délai pour le premier paragraphe */
+}
+
+.propos p:nth-child(2) {
+  animation-delay: 1.5s; /* Délai pour le deuxième paragraphe */
+}
+
+.propos p:nth-child(3) {
+  animation-delay: 2.5s; /* Délai pour le troisième paragraphe */
+}
+
+.propos p:nth-child(4) {
+  animation-delay: 3.5s; /* Délai pour le quatrième paragraphe */
+}
+
+.propos p:nth-child(5) {
+  animation-delay: 4.5s; /* Délai pour le quatrième paragraphe */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accueil-container {
+  opacity: 0; /* Initialement invisible */
+  animation: fadeInPage 2s ease-in-out forwards; /* Animation de fondu entrant */
+}
+
+@keyframes fadeInPage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main h1 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .picma {
+    display: flex;
+    flex-direction: column; /* Mettre le texte et l'image en colonne */
+    align-items: center; /* Centrer le contenu */
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .propos p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .picma {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding-bottom: 40px;
+  }
+
+  .main h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .items20 {
+    margin-top: -10px;
+  }
+
+  .picma img {
+    width: 300px;
+    height: 300px;
+  }
+
+  @keyframes underlineGrow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  @keyframes underlineGrow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 40%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+}

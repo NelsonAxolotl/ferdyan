@@ -1,0 +1,209 @@
+.creation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+  background: rgb(241, 241, 241);
+}
+
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.creation h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 5rem;
+  padding-top: 180px;
+  font-weight: bold;
+  color: rgba(23, 22, 22, 0.811);
+  text-align: center;
+}
+
+.underline-crea {
+  width: 0; /* Initialement, la largeur est de 0 */
+  height: 1px; /* Épaisseur de la ligne */
+  background-color: black; /* Couleur de la ligne */
+  margin: 10px 0; /* Marge autour de la ligne */
+  animation: underlineGrow-crea 2s ease-out forwards; /* Animation pour faire grandir la ligne */
+  animation-delay: 1.5s; /* Délai avant que l'animation commence */
+}
+
+.gallerie3 h2 {
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid rgb(164, 164, 164);
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(71, 71, 71);
+}
+
+.items20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.items20 h3 {
+  font-size: 1.8rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: rgb(126, 58, 58);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.items25 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.items25 h3 {
+  font-size: 1.8rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: rgb(126, 58, 58);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.items25 span {
+  font-size: 1.8rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: rgb(126, 58, 58);
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.slide-in2 {
+  position: relative;
+  animation: slideIn2 2s ease-out forwards;
+  opacity: 0; /* Initial opacity */
+}
+
+.art {
+  opacity: 0; /* Initialement invisible */
+  transform: translateY(20px); /* Déplace l'élément légèrement vers le bas */
+  transition: opacity 5s ease-in-out, transform 4s ease-in-out; /* Transition pour l'effet de fondu et de déplacement */
+}
+
+/* Ajout d'une classe pour rendre les éléments visibles */
+.art.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Repositionne l'élément à sa place d'origine */
+}
+
+.art h2 {
+  font-size: 5rem;
+  font-family: "Qwitcher Grypen", cursive;
+  color: rgba(23, 22, 22, 0.811);
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+@keyframes slideIn2 {
+  0% {
+    transform: translateX(-235%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes underlineGrow-crea {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 35%; /* La ligne grandit jusqu'à 100% de sa taille */
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .creation h1 {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creation {
+    padding-bottom: 40px;
+  }
+
+  .titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .creation h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .gallerie3 h2 {
+    margin-top: 50px;
+  }
+
+  .art h2 {
+    font-size: 2.8rem;
+    margin-top: -30px;
+  }
+
+  .items20 h3 {
+    margin-top: 50px;
+  }
+
+  .items25 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items25 h3 {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+
+  .items25 span {
+    margin-top: 10px;
+  }
+
+  .pic-item img {
+    width: 300px;
+  }
+
+  @keyframes underlineGrow-crea {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 55%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  @keyframes underlineGrow-crea {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 70%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+}

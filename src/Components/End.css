@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Quicksand:wght@300..700&display=swap");
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.end p {
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif;
+}
+
+.end a {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 5px;
+}
+
+.end span {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 760px) {
+  .end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .end span {
+    display: none;
+  }
+
+  .end p {
+    font-size: 0.9rem;
+  }
+
+  .end a {
+    font-size: 0.9rem;
+  }
+}

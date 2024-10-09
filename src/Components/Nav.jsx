@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <>
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
-        <div className="navbar-logo" onClick={() => handleNavClick("/accueil")}>
+        <div className="navbar-logo" onClick={() => handleNavClick("/")}>
           <Link to="/">
             <img src={logo} alt="logo Ferdyan" />
           </Link>

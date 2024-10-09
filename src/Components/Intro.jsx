@@ -13,7 +13,7 @@ const Intro = ({ onComplete }) => {
       setFadeOut(true);
       // Redirige après la fin de l'animation de fondu sortant
       setTimeout(() => {
-        navigate("/accueil"); // Assurez-vous que ce chemin est correct
+        navigate("/"); // Assurez-vous que ce chemin est correct
         if (onComplete) onComplete(); // Appelle la fonction de fin si elle est définie
       }, 2000); // Durée de l'animation de fondu sortant
     }, 3000); // Durée de l'animation d'entrée

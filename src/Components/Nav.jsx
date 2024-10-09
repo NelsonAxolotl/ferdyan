@@ -19,21 +19,18 @@ const Nav = () => {
     <>
       <nav className={`navbar ${showLinks ? "show-nav" : "hide-nav"}`}>
         <div className="navbar-logo" onClick={() => handleNavClick("/accueil")}>
-          <Link to="/accueil">
+          <Link to="/">
             <img src={logo} alt="logo Ferdyan" />
           </Link>
         </div>
         <ul className="navbar-links">
-          <Link to="/accueil">
+          <Link to="/">
             <li
               className={`navbar-item slideInDown-1 ${
-                activeLink === "/accueil" ? "active" : ""
+                activeLink === "/" ? "active" : ""
               }`}
             >
-              <div
-                className="navbar-link"
-                onClick={() => handleNavClick("/accueil")}
-              >
+              <div className="navbar-link" onClick={() => handleNavClick("/")}>
                 Accueil
               </div>
             </li>

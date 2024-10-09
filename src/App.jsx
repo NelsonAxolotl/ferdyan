@@ -30,7 +30,7 @@ function App() {
           <ScrollToTop />
           <Nav />
           <Routes>
-            <Route path="/accueil" element={<Accueil />} />
+            <Route path="/" element={<Accueil />} />
             <Route path="/creation sur mesure" element={<Creation />} />
             <Route path="/chantourage" element={<Chantourage />} />
             <Route path="/dessins" element={<Dessin />} />

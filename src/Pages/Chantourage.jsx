@@ -326,7 +326,7 @@ const Chantourage = () => {
           <span>est unique et disponible à la vente.</span>
           <div className={`accueil-container1 ${fadeIn ? "fade-in" : ""}`}>
             <span>
-              Pour plus d'informations, veuillez me{" "}
+              Pour plus d&apos;informations, veuillez me contacter.
               <Link to="/contact">contacter</Link>.
             </span>
           </div>

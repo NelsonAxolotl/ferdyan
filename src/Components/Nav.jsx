@@ -60,7 +60,7 @@ const Nav = () => {
                 className="navbar-link"
                 onClick={() => handleNavClick("/chantourage")}
               >
-                Chartourage
+                Chantourage
               </div>
             </li>
           </Link>

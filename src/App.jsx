@@ -13,25 +13,37 @@ import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 
 function App() {
-  const [introCompleted, setIntroCompleted] = useState(false);
-  const [fadeClass, setFadeClass] = useState("");
+  const [showIntro, setShowIntro] = useState(true); // État pour afficher l'introduction
+
+  const handleIntroComplete = () => {
+    setShowIntro(false); // Masquer l'introduction une fois terminée
+  };
 
   useEffect(() => {
-    if (introCompleted) {
-      setFadeClass("fade-in");
-    }
-  }, [introCompleted]);
+    // Vérifiez la route actuelle pour réinitialiser l'introduction si nécessaire
+    const handleNavigation = () => {
+      if (window.location.pathname !== "/") {
+        setShowIntro(false); // Ne pas montrer l'intro si on n'est pas sur la route d'accueil
+      }
+    };
+
+    window.addEventListener("popstate", handleNavigation);
+    return () => {
+      window.removeEventListener("popstate", handleNavigation);
+    };
+  }, []);
 
   return (
     <Router>
-      {introCompleted ? (
-        <div className={`app-content ${fadeClass}`}>
-          {/* Applique la classe d'animation */}
+      {showIntro ? (
+        <Intro onComplete={handleIntroComplete} />
+      ) : (
+        <div className="app-content">
           <ScrollToTop />
           <Nav />
           <Routes>
             <Route path="/" element={<Accueil />} />
-            <Route path="/creation sur mesure" element={<Creation />} />
+            <Route path="/creation-sur-mesure" element={<Creation />} />
             <Route path="/chantourage" element={<Chantourage />} />
             <Route path="/dessins" element={<Dessin />} />
             <Route path="/contact" element={<Contact />} />
@@ -39,8 +51,6 @@ function App() {
           </Routes>
           <End />
         </div>
-      ) : (
-        <Intro onComplete={() => setIntroCompleted(true)} />
       )}
     </Router>
   );

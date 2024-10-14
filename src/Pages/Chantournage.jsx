@@ -39,7 +39,7 @@ import noelfab from "../Pics/noelfab.jpg";
 import floconfab from "../Pics/floconfab.jpg";
 import taureau1 from "../Pics/Taureau.jpg";
 import taureau from "../Pics/taureau2.jpg";
-const Chantourage = () => {
+const Chantournage = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -588,4 +588,4 @@ const Chantourage = () => {
     </>
   );
 };
-export default Chantourage;
+export default Chantournage;

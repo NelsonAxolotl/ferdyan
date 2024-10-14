@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Chantourage.css";
+import "./Chantournage.css";
 import bougeoirs1 from "../Pics/Bougeoir1.jpg";
 import bougeoirs2 from "../Pics/Bougeoir2.jpg";
 import bougeoirs3 from "../Pics/Bougeoir3.jpg";
@@ -59,7 +59,7 @@ const Chantourage = () => {
   return (
     <>
       <div className="char">
-        <h1 className="slide-in">Chartourage</h1>
+        <h1 className="slide-in">Chartournage</h1>
         <div className="underline-char"></div>
         <div className="propos">
           <p>

@@ -30,7 +30,7 @@ const Nav = () => {
         {[
           { path: "/", label: "Accueil" },
           { path: "/creation-sur-mesure", label: "Creation sur mesure" },
-          { path: "/chantourage", label: "Chantourage" },
+          { path: "/chantournage", label: "Chantournage" },
           { path: "/dessins", label: "Dessins" },
           { path: "/contact", label: "Contact" },
         ].map(({ path, label }, index) => (

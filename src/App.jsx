@@ -6,7 +6,7 @@ import Nav from "./Components/Nav";
 import End from "./Components/End";
 import Intro from "./Components/Intro";
 import Accueil from "./Pages/Accueil";
-import Chantourage from "./Pages/Chantourage";
+import Chantournage from "./Pages/Chantournage";
 import Dessin from "./Pages/Dessin";
 import Creation from "./Pages/Creation";
 import Contact from "./Pages/Contact";
@@ -44,7 +44,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/creation-sur-mesure" element={<Creation />} />
-            <Route path="/chantourage" element={<Chantourage />} />
+            <Route path="/chantournage" element={<Chantournage />} />
             <Route path="/dessins" element={<Dessin />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

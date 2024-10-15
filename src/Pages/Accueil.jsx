@@ -71,6 +71,8 @@ const Accueil = () => {
             src={manu}
             alt="photo de Emmanuelle Ferdyan artiste"
             onClick={() => handleImageClick(manu)}
+            height="300px"
+            width="auto"
             loading="lazy"
           />
         </div>

@@ -3,9 +3,8 @@ User-agent: *
 Allow: /
 
 # Sitemap pour aider les moteurs de recherche à indexer le contenu
-Sitemap: https://ployr.fr/sitemap.xml
+Sitemap: https://emmanuelleferdyan/sitemap.xml
 
-# Directive pour Googlebot (exemple pour ajuster certains comportements spécifiques)
+# Directive pour Googlebot 
 User-agent: Googlebot
 Allow: /public/
-Disallow: /search/

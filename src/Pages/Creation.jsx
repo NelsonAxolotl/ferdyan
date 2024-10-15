@@ -84,7 +84,7 @@ const Creation = () => {
         </div>
 
         <div className="gallerie3">
-          <h2>Gallerie</h2>
+          <h2>Galerie</h2>
         </div>
 
         <div className="items20">
@@ -187,7 +187,7 @@ const Creation = () => {
           </p>
         </div>
         <div className="gallerie3">
-          <h2>Gallerie</h2>
+          <h2>Galerie</h2>
         </div>
 
         <div className="items20">

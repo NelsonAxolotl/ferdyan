@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "./Intro.css";
+import "./Intro.css"; // Assurez-vous d'avoir des styles pour le fondu
+import logoManu from "../Pics/logomanu.webp";
 
 const Intro = ({ onComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);
@@ -18,10 +19,12 @@ const Intro = ({ onComplete }) => {
 
   return (
     <div className={`intro-container ${fadeOut ? "fade-out" : ""}`}>
-      <h1 className="intro-text">Emmanuelle Ferdyan</h1>
-      <div className={`intro-subtitle ${fadeOut ? "fade-out" : ""}`}>
-        Plasticienne Designer
-      </div>
+      <img
+        src={logoManu}
+        alt="Logo Emmanuelle Ferdyan"
+        className="intro-logo"
+      />
+      <div className={`intro-subtitle ${fadeOut ? "fade-out" : ""}`}></div>
     </div>
   );
 };

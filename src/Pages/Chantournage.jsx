@@ -165,7 +165,7 @@ const Chantournage = () => {
           </div>
         </div>
         <div className="gallerie">
-          <h2>Gallerie</h2>
+          <h2>Galerie</h2>
         </div>
 
         <div className="items2">
@@ -332,7 +332,7 @@ const Chantournage = () => {
           </div>
         </div>
         <div className="gallerie">
-          <h2>Gallerie</h2>
+          <h2>Galerie</h2>
         </div>
         <div className="items">
           <h3>Bougeoirs</h3>

@@ -8,7 +8,7 @@ const dessin = () => {
         <h1 className="slide-in">Dessins</h1>
         <div className="underline-dess"></div>
         <div className="galleries2">
-          <h2>Gallerie</h2>
+          <h2>Galerie</h2>
         </div>
         <Gallery />
       </div>

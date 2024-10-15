@@ -38,7 +38,7 @@ const Nav = () => {
           <img
             src={logo}
             alt="logo Ferdyan"
-            width="auto"
+            width="290px"
             height="120px"
             loading="eager"
           />

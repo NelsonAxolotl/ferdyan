@@ -1,20 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import "./Creation.css";
-import escaliers from "../Pics/escaliers.jpg";
-import escaliers2 from "../Pics/escaliers2.jpg";
-import escaliers3 from "../Pics/escaliers3.jpeg";
-import biblio from "../Pics/biblio.jpg";
-import bureau from "../Pics/bureau.jpg";
-import bureau2 from "../Pics/bureau2.jpg";
-import boutique from "../Pics/boutique.jpg";
-import boutique2 from "../Pics/boutique2.jpg";
-import chaise from "../Pics/chaise.jpg";
-import chaise2 from "../Pics/chaise2.jpg";
-import coffre from "../Pics/coffre.jpg";
-import commode1 from "../Pics/commode1.jpg";
-import commode2 from "../Pics/commode2.jpg";
-import enfant1 from "../Pics/enfant1.jpg";
-import enfant2 from "../Pics/enfant2.jpg";
+import escaliers from "../Pics/escaliers.webp";
+import escaliers2 from "../Pics/escaliers2.webp";
+import escaliers3 from "../Pics/escaliers3.webp";
+import biblio from "../Pics/biblio.webp";
+import bureau from "../Pics/bureau.webp";
+import bureau2 from "../Pics/bureau2.webp";
+import boutique from "../Pics/boutique.webp";
+import boutique2 from "../Pics/boutique2.webp";
+import chaise from "../Pics/chaise.webp";
+import chaise2 from "../Pics/chaise2.webp";
+import coffre from "../Pics/coffre.webp";
+import commode1 from "../Pics/commode1.webp";
+import commode2 from "../Pics/commode2.webp";
+import enfant1 from "../Pics/enfant1.webp";
+import enfant2 from "../Pics/enfant2.webp";
 
 const Creation = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);

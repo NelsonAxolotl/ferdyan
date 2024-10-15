@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import manu from "../Pics/manu.jpg";
+import manu from "../Pics/manu.webp";
 import "./Accueil.css";
 
 const Accueil = () => {

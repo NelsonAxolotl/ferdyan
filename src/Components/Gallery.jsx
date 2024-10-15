@@ -5,22 +5,22 @@ import "slick-carousel/slick/slick-theme.css"; // Thème slick-carousel
 import Slider from "react-slick"; // Importation du composant Slider de react-slick
 
 // Importation des images que tu as mentionnées
-import insitu1 from "../Pics/insitu1.jpg";
-import insitu2 from "../Pics/insitu2.jpg";
-import insitu3 from "../Pics/insitu3.jpg";
-import insitu4 from "../Pics/insitu4.jpg";
-import insitu5 from "../Pics/insitu5.jpg";
-import insitu6 from "../Pics/insitu6.jpg";
-import odalisque from "../Pics/odalisque.jpg";
-import odalisque2 from "../Pics/odalisque2.jpg";
-import odalisque3 from "../Pics/odalisque3.jpg";
-import odalisque4 from "../Pics/odalisque4.jpg";
-import odalisque5 from "../Pics/odalisque5.jpg";
-import odalisque6 from "../Pics/odalisque6.jpg";
-import main from "../Pics/main1.jpg";
-import main1 from "../Pics/main2.jpg";
-import fauteuil from "../Pics/fauteuil.jpg";
-import biblidraw from "../Pics/biblidraw.jpg";
+import insitu1 from "../Pics/insitu1.webp";
+import insitu2 from "../Pics/insitu2.webp";
+import insitu3 from "../Pics/insitu3.webp";
+import insitu4 from "../Pics/insitu4.webp";
+import insitu5 from "../Pics/insitu5.webp";
+import insitu6 from "../Pics/insitu6.webp";
+import odalisque from "../Pics/odalisque.webp";
+import odalisque2 from "../Pics/odalisque2.webp";
+import odalisque3 from "../Pics/odalisque3.webp";
+import odalisque4 from "../Pics/odalisque4.webp";
+import odalisque5 from "../Pics/odalisque5.webp";
+import odalisque6 from "../Pics/odalisque6.webp";
+import main from "../Pics/main1.webp";
+import main1 from "../Pics/main2.webp";
+import fauteuil from "../Pics/fauteuil.webp";
+import biblidraw from "../Pics/biblidraw.webp";
 
 // Tableau des images à afficher dans le carrousel
 const images = [

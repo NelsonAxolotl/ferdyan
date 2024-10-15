@@ -27,8 +27,8 @@ const Accueil = () => {
         <div className="propos">
           <p>
             Fille d’un père artisan autodidacte spécialisé dans le travail du
-            bois et de la pierre, Emmanuelle FERDYAN a toujours été passionnée
-            par le dessin. <br />
+            bois et de la pierre, <span>Emmanuelle FERDYAN</span> a toujours été
+            passionnée par le dessin. <br />
             Elle poursuit des études supérieures aux Beaux-Arts de Toulon, où
             elle se spécialise en design d’espace et en arts plastiques de 1996
             à 2000.

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import "./Chantournage.css";
 import bougeoirs1 from "../Pics/Bougeoir1.webp";
 import bougeoirs2 from "../Pics/Bougeoir2.webp";
-import bougeoirs3 from "../Pics/Bougeoir3.webp";
-import bougeoirs4 from "../Pics/Bougeoir4.webp";
+import bougeoirs3 from "../Pics/bougeoir3.webp";
+import bougeoirs4 from "../Pics/bougeoir4.webp";
 import bougeoirs5 from "../Pics/bougeoir5.webp";
 import bougeoirs6 from "../Pics/bougeoir6.webp";
 import cerf1 from "../Pics/cerf1.webp";
@@ -59,7 +59,7 @@ const Chantournage = () => {
   return (
     <>
       <div className="char">
-        <h1 className="slide-in">Chartournage</h1>
+        <h1 className="slide-in">Chantournage</h1>
         <div className="underline-char"></div>
         <div className="propos">
           <p>
@@ -159,7 +159,7 @@ const Chantournage = () => {
           <span>est unique et disponible à la vente.</span>
           <div className={`accueil-container1 ${fadeIn ? "fade-in" : ""}`}>
             <span>
-              Pour plus d&#39;informations, veuillez me
+              Pour plus d&#39;informations, veuillez me{" "}
               <Link to="/contact">contacter</Link>.
             </span>
           </div>
@@ -326,7 +326,7 @@ const Chantournage = () => {
           <span>est unique et disponible à la vente.</span>
           <div className={`accueil-container1 ${fadeIn ? "fade-in" : ""}`}>
             <span>
-              Pour plus d&apos;informations, veuillez me contacter.
+              Pour plus d&apos;informations, veuillez me contacter{" "}
               <Link to="/contact">contacter</Link>.
             </span>
           </div>
@@ -381,6 +381,9 @@ const Chantournage = () => {
             <p>Dimensions: cm x cm</p>
             <p>Price: €</p>
           </div>
+        </div>
+        <div className="marks">
+          <p>Bougeoir en corian</p>
         </div>
         <div className="pic-item2">
           <div className="image-item">

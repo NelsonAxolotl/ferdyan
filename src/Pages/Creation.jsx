@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./Creation.css";
-import escaliers from "../Pics/escaliers.webp";
-import escaliers2 from "../Pics/escaliers2.webp";
+import escaliers from "../Pics/escaliers.png";
+import escaliers2 from "../Pics/escaliers2.png";
 import escaliers3 from "../Pics/escaliers3.webp";
 import biblio from "../Pics/biblio.webp";
 import bureau from "../Pics/bureau.webp";

@@ -6,7 +6,7 @@
   align-items: center;
   height: 80px;
   background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: rgb(126, 58, 58);
 }
 
 .end p {
@@ -16,7 +16,7 @@
 
 .end a {
   font-size: 1.2rem;
-  color: rgb(0, 0, 0);
+  color: rgb(126, 58, 58);
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   margin-left: 5px;

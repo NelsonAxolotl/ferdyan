@@ -9,7 +9,7 @@ import bougeoirs5 from "../Pics/bougeoir5.webp";
 import bougeoirs6 from "../Pics/bougeoir6.webp";
 import cerf1 from "../Pics/cerf1.webp";
 import cerf2 from "../Pics/cerf2.webp";
-import cerf3 from "../Pics/cerf3.webp";
+import cerf3 from "../Pics/Cerf3.webp";
 import cerf4 from "../Pics/cerf4.webp";
 import loup1 from "../Pics/loup1.webp";
 import loup2 from "../Pics/loup2.webp";

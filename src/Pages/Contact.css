@@ -8,8 +8,8 @@
 }
 
 .contact h1 {
-  font-family: "Qwitcher Grypen", cursive;
-  font-size: 5rem;
+  font-family: "quicksand", cursive;
+  font-size: 3rem;
   padding-top: 180px;
   font-weight: bold;
   color: rgba(23, 22, 22, 0.811);
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: "Qwitcher Grypen", cursive;
+  font-family: "quicksand", cursive;
   transition: opacity 0.5s ease;
 }
 
@@ -90,13 +90,13 @@
 }
 /* Style pour le texte du téléphone */
 .phone span {
-  font-size: 2.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: grey;
 }
 
 .address p {
-  font-size: 2.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: grey;
 }
@@ -115,7 +115,7 @@
 
 /* Style pour les liens d'email */
 .mail a {
-  font-size: 2.8rem; /* Taille de la police */
+  font-size: 1.5rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
   color: grey; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */

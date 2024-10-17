@@ -5,10 +5,12 @@ import ScrollToTop from "./Components/ScrollToTop";
 import Nav from "./Components/Nav";
 import End from "./Components/End";
 import Intro from "./Components/Intro";
+import Home from "./Pages/Home";
 import Accueil from "./Pages/Accueil";
 import Chantournage from "./Pages/Chantournage";
 import Dessin from "./Pages/Dessin";
 import Creation from "./Pages/Creation";
+import Restauration from "./Pages/Restauration";
 import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 
@@ -42,9 +44,11 @@ function App() {
           <ScrollToTop />
           <Nav />
           <Routes>
-            <Route path="/" element={<Accueil />} />
+            <Route path="/" element={<Home />} />
             <Route path="/creation-sur-mesure" element={<Creation />} />
+            <Route path="/reparation-restauration" element={<Restauration />} />
             <Route path="/chantournage" element={<Chantournage />} />
+            <Route path="/parcours" element={<Accueil />} />
             <Route path="/dessins" element={<Dessin />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

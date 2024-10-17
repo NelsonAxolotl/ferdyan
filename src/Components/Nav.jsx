@@ -46,10 +46,14 @@ const Nav = () => {
       </div>
       <ul className="navbar-links">
         {[
-          { path: "/", label: "Accueil", className: "slideInDown-1" },
           {
             path: "/creation-sur-mesure",
             label: "Création sur mesure",
+            className: "slideInDown-1",
+          },
+          {
+            path: "/reparation-restauration",
+            label: "Réparation / Restauration",
             className: "slideInDown-2",
           },
           {
@@ -57,8 +61,13 @@ const Nav = () => {
             label: "Chantournage",
             className: "slideInDown-3",
           },
-          { path: "/dessins", label: "Dessins", className: "slideInDown-4" },
-          { path: "/contact", label: "Contact", className: "slideInDown-5" },
+          {
+            path: "/parcours",
+            label: "Parcours",
+            className: "slideInDown-4",
+          },
+          { path: "/dessins", label: "Dessins", className: "slideInDown-5" },
+          { path: "/contact", label: "Contact", className: "slideInDown-6" },
         ].map(
           (
             { path, label, className },

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 .navbar {
   display: flex;
@@ -45,16 +45,14 @@
   color: inherit;
   transition: all 0.67s ease-in-out;
   display: block;
-  padding: 10px 20px;
+  padding: 10px 15px;
   cursor: pointer;
-  margin-left: 10px;
-  font-size: 45px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   color: gray;
   transition: all 0.3s ease-in-out;
   font-weight: bold;
-  font-family: "Qwitcher Grypen", cursive;
 }
 
 .navbar-link:hover {
@@ -107,19 +105,20 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .navbar {
     flex-direction: column;
   }
 
-  .navbar-link span {
-    display: inline-block;
+  .navbar-link {
+    padding: 10px 25px;
   }
 
   .navbar-links {
     margin-top: 0;
   }
 }
+
 @media screen and (max-width: 966px) {
   .navbar-link {
     margin-left: 0px;
@@ -178,7 +177,7 @@
   .navbar-link {
     display: block;
     padding: 1.5rem;
-    font-size: 10vw;
+    font-size: 2rem;
     margin: 0;
     color: grey;
   }
@@ -260,6 +259,10 @@
 
   .show-nav .slideInDown-5 {
     transition: all 3s ease-out;
+  }
+
+  .show-nav .slideInDown-6 {
+    transition: all 3.5s ease-out;
   }
 
   .navbar-link:hover {

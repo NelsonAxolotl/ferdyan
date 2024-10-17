@@ -171,65 +171,6 @@ const Creation = () => {
             loading="lazy"
           />
         </div>
-
-        {/* Section réparation/restauration avec animation de fondu */}
-        <div className="art" ref={restorationRef}>
-          <h2>-Réparation / Restauration- </h2>
-        </div>
-        <div className="propos">
-          <p>
-            Mon expertise s’étend également à la restauration de vos meubles
-            anciens auxquels vous êtes attachés pour leur faire peau neuve, ou
-            les transformer pour les revaloriser en y apportant une touche
-            contemporaine. <br />
-            Je m’engage à utiliser des matériaux de qualité pour allier
-            durabilité et esthétisme.
-          </p>
-        </div>
-        <div className="gallerie3">
-          <h2>Galerie</h2>
-        </div>
-
-        <div className="items20">
-          <h3>Chaise / coffre</h3>
-        </div>
-        <div className="pic-item">
-          <img
-            src={chaise}
-            alt="chaise"
-            onClick={() => handleImageClick(chaise)}
-            loading="lazy"
-          />
-          <img
-            src={chaise2}
-            alt="chaise"
-            onClick={() => handleImageClick(chaise2)}
-            loading="lazy"
-          />
-          <img
-            src={coffre}
-            alt="coffre"
-            onClick={() => handleImageClick(coffre)}
-            loading="lazy"
-          />
-        </div>
-        <div className="items20">
-          <h3>Commode vintage</h3>
-        </div>
-        <div className="pic-item">
-          <img
-            src={commode2}
-            alt="commode"
-            onClick={() => handleImageClick(commode2)}
-            loading="lazy"
-          />
-          <img
-            src={commode1}
-            alt="commode"
-            onClick={() => handleImageClick(commode1)}
-            loading="lazy"
-          />
-        </div>
       </div>
 
       {enlargedImage && (

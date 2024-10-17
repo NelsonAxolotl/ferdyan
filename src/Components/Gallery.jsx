@@ -13,7 +13,7 @@ import insitu5 from "../Pics/insitu5.webp";
 import insitu6 from "../Pics/insitu6.webp";
 import odalisque from "../Pics/odalisque.webp";
 import odalisque2 from "../Pics/odalisque2.webp";
-import odalisque3 from "../Pics/odalisque3.webp";
+import odalisque3 from "../Pics/odalisque3.png";
 import odalisque4 from "../Pics/odalisque4.webp";
 import odalisque5 from "../Pics/odalisque5.webp";
 import odalisque6 from "../Pics/odalisque6.webp";
@@ -21,6 +21,11 @@ import main from "../Pics/main1.webp";
 import main1 from "../Pics/main2.webp";
 import fauteuil from "../Pics/fauteuil.webp";
 import biblidraw from "../Pics/biblidraw.webp";
+import draw from "../Pics/1.webp";
+import draw2 from "../Pics/5.webp";
+import draw3 from "../Pics/6.webp";
+import draw4 from "../Pics/10.webp";
+import draw5 from "../Pics/11.webp";
 
 // Tableau des images à afficher dans le carrousel
 const images = [
@@ -40,6 +45,11 @@ const images = [
   { src: main1, alt: "Main 2" },
   { src: fauteuil, alt: "Fauteuil" },
   { src: biblidraw, alt: "Bibliothèque" },
+  { src: draw, alt: "dessin" },
+  { src: draw2, alt: "dessin" },
+  { src: draw3, alt: "dessin" },
+  { src: draw4, alt: "dessin" },
+  { src: draw5, alt: "dessin" },
 ];
 
 const Gallery = () => {

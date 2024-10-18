@@ -39,7 +39,7 @@ const Home = () => {
             </div>
 
             <div className="image-container">
-              <Link to="/restauration-de-meuble">
+              <Link to="/reparation-restauration">
                 <img
                   src={coffre}
                   alt="coffres"

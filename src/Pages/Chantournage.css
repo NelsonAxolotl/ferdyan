@@ -47,6 +47,24 @@
   }
 }
 
+.underline-fixe {
+  width: 0; /* Initialement, la largeur est de 0 */
+  height: 1px; /* Épaisseur de la ligne */
+  background-color: black; /* Couleur de la ligne */
+  margin: 10px 0; /* Marge autour de la ligne */
+  animation: underlineGrow-fixe 1.5s ease-out forwards; /* Animation pour faire grandir la ligne */
+  animation-delay: 1.5s; /* Délai avant que l'animation commence */
+}
+
+@keyframes underlineGrow-fixe {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%; /* La ligne grandit jusqu'à 100% de sa taille */
+  }
+}
 .propos {
   margin: 20px;
 }

@@ -3,16 +3,12 @@ import "./Creation.css";
 import escaliers from "../Pics/escaliers.png";
 import escaliers2 from "../Pics/escaliers2.png";
 import escaliers3 from "../Pics/escaliers3.webp";
+import escaliers4 from "../Pics/escaliers4.webp";
 import biblio from "../Pics/biblio.webp";
 import bureau from "../Pics/bureau.webp";
 import bureau2 from "../Pics/bureau2.webp";
 import boutique from "../Pics/boutique.webp";
 import boutique2 from "../Pics/boutique2.webp";
-import chaise from "../Pics/chaise.webp";
-import chaise2 from "../Pics/chaise2.webp";
-import coffre from "../Pics/coffre.webp";
-import commode1 from "../Pics/commode1.webp";
-import commode2 from "../Pics/commode2.webp";
 import enfant1 from "../Pics/enfant1.webp";
 import enfant2 from "../Pics/enfant2.webp";
 
@@ -86,91 +82,18 @@ const Creation = () => {
         <div className="gallerie3">
           <h2>Galerie</h2>
         </div>
-
-        <div className="items20">
-          <h3>Escaliers à pas Japonais</h3>
-        </div>
-
-        <div className="pic-item">
-          <img
-            src={escaliers}
-            alt="escaliers"
-            onClick={() => handleImageClick(escaliers)}
-            loading="lazy"
-          />
-          <img
-            src={escaliers2}
-            alt="escaliers"
-            onClick={() => handleImageClick(escaliers2)}
-            loading="lazy"
-          />
-        </div>
-        <div className="items20">
-          <h3> Bureau / Bibliothèque</h3>
-        </div>
-        <div className="pic-item">
-          <img
-            src={biblio}
-            alt="bibliothèque"
-            onClick={() => handleImageClick(biblio)}
-            loading="lazy"
-          />
-
-          <img
-            src={bureau}
-            alt="bureau"
-            onClick={() => handleImageClick(bureau)}
-            loading="lazy"
-          />
-          <img
-            src={escaliers3}
-            alt="bibliothèque"
-            onClick={() => handleImageClick(escaliers3)}
-            loading="lazy"
-          />
-        </div>
-        <div className="items25">
-          <h3>Réménagement</h3> <span>chambre d&#39;enfant</span>
-        </div>
-        <div className="pic-item">
-          <img
-            src={enfant1}
-            alt="bibliothèque"
-            onClick={() => handleImageClick(enfant1)}
-            loading="lazy"
-          />
-
-          <img
-            src={enfant2}
-            alt="bureau"
-            onClick={() => handleImageClick(enfant2)}
-            loading="lazy"
-          />
-          <img
-            src={bureau2}
-            alt="bureau"
-            onClick={() => handleImageClick(bureau2)}
-            loading="lazy"
-          />
-        </div>
-        <div className="items20">
-          <h3>Devanture de boutique</h3>
-        </div>
-        <div className="pic-item">
-          <img
-            src={boutique}
-            alt="boutique"
-            onClick={() => handleImageClick(boutique)}
-            loading="lazy"
-          />
-
-          <img
-            src={boutique2}
-            alt="boutique"
-            onClick={() => handleImageClick(boutique2)}
-            loading="lazy"
-          />
-        </div>
+        <img
+          src={escaliers3}
+          alt="bibliothèque sous escaliers"
+          onClick={() => handleImageClick(escaliers3)}
+          loading="lazy"
+        />
+        <img
+          src={escaliers4}
+          alt="bibliothèque sous escaliers"
+          onClick={() => handleImageClick(escaliers4)}
+          loading="lazy"
+        />
       </div>
 
       {enlargedImage && (

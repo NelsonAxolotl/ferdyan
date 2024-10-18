@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
-import "./Restauration.css";
+import "./Chantournage.css";
 import chaise from "../Pics/chaise.webp";
 import chaise2 from "../Pics/chaise2.webp";
 import coffre from "../Pics/coffre.webp";
 import commode1 from "../Pics/commode1.webp";
 import commode2 from "../Pics/commode2.webp";
-const Restauration = () => {
+const Fixe = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    // Déclencher l'animation de fondu entrant après que le composant soit monté
-    setFadeIn(true);
-  }, []);
 
   const handleImageClick = (image) => {
     setEnlargedImage(image);
@@ -21,16 +15,19 @@ const Restauration = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    // Déclencher l'animation de fondu entrant après que le composant soit monté
+    setFadeIn(true);
+  }, []);
+
   return (
     <>
-      <div className="main">
-        <h1 className="slide-in">Parcours</h1>
-        <div className="underline"></div>
-      </div>
       <div className={`accueil-container ${fadeIn ? "fade-in" : ""}`}>
-        <div className="art">
+        <div className="char">
           <h1 className="slide-in">Réparation / Restauration</h1>
-          <div className="underline"></div>
+          <div className="underline-fixe"></div>
 
           <div className="propos">
             <p>
@@ -41,6 +38,46 @@ const Restauration = () => {
               touche contemporaine. Pour se faire, je m’engage à utiliser des
               matériaux de qualité pour allier durabilité et esthétisme.
             </p>
+          </div>
+          <div className="pic-item1">
+            <div className="image-item">
+              <img
+                src={commode2}
+                alt="commode"
+                onClick={() => handleImageClick(commode2)}
+                loading="lazy"
+              />
+              <img
+                src={commode1}
+                alt="commode"
+                onClick={() => handleImageClick(commode1)}
+                loading="lazy"
+              />
+            </div>
+            <div className="image-item">
+              <img
+                src={chaise}
+                alt="chaise"
+                onClick={() => handleImageClick(chaise)}
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="pic-item1">
+            <div className="image-item1">
+              <img
+                src={coffre}
+                alt="coffre"
+                onClick={() => handleImageClick(coffre)}
+                loading="lazy"
+              />
+              <img
+                src={chaise2}
+                alt="chaise"
+                onClick={() => handleImageClick(chaise2)}
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
         {enlargedImage && (
@@ -62,4 +99,4 @@ const Restauration = () => {
   );
 };
 
-export default Restauration;
+export default Fixe;

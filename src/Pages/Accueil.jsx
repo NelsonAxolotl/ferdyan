@@ -26,7 +26,7 @@ const Accueil = () => {
         <div className="underline"></div>
 
         <div className="picma">
-          <div className="propos">
+          <div className="proposa">
             <p>
               Fille d’un père artisan autodidacte spécialisé dans le travail du
               bois et de la pierre, j’ai toujours été passionné par le dessin et

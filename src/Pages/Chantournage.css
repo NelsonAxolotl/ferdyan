@@ -28,6 +28,23 @@
   color: rgb(126, 58, 58);
   animation: fadeIn 3s ease-out forwards;
 }
+
+.chartext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "quicksand", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(126, 58, 58);
+  animation: fadeIn 3s ease-out forwards;
+}
+
+.chartext span {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
 .underline-char {
   width: 0; /* Initialement, la largeur est de 0 */
   height: 1px; /* Épaisseur de la ligne */
@@ -381,7 +398,7 @@
   text-align: center; /* Ensures the text below the image is centered */
 }
 
-.image-item img:first-of-type {
+.image-itemfab img:first-of-type {
   object-position: top; /* Assure que le haut de l'image est visible */
 }
 
@@ -401,7 +418,7 @@
   color: black;
   font-weight: 500;
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 22px;
   margin: 15px 0;
   text-align: center;
 }
@@ -467,7 +484,7 @@
 
 .pic-item2 img {
   width: 200px;
-  height: 250px;
+  height: 300px;
   border-radius: 5px;
   border: 2px solid white;
   cursor: pointer;
@@ -565,6 +582,11 @@
   transform: scale(1.03);
 }
 
+.image-itemfab {
+  object-fit: cover;
+  text-align: center; /* Ensures the text below the image is centered */
+}
+
 @media screen and (max-width: 1200px) {
   .char h1 {
     margin-top: 80px;
@@ -602,21 +624,38 @@
   }
 
   .char h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 0;
   }
 
-  .gallerie h2 {
-    margin-top: 50px;
+  .char h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 
-  @keyframes underlineGrow-char {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 35%; /* La ligne grandit jusqu'à 100% de sa taille */
-    }
+  .chartext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chartext span {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .gallerie h2 {
+    margin-top: 30px;
+    font-size: 1.4rem;
+  }
+
+  .proposx p {
+    margin: 20px;
+  }
+
+  .propos1 {
+    margin-top: 0;
   }
 }
 
@@ -645,6 +684,7 @@
   .pic-item2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px; /* Espace entre les images */
     margin-bottom: 40px;
   }
@@ -697,10 +737,12 @@
 
   .items7 h3 {
     margin-top: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
   }
 
   .items7 h4 {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     margin-top: -30px;
   }
 
@@ -742,7 +784,7 @@
       width: 0;
     }
     100% {
-      width: 50%; /* La ligne grandit jusqu'à 100% de sa taille */
+      width: 80%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
 }

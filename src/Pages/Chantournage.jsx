@@ -57,11 +57,10 @@ const Chantournage = () => {
       <div className="char">
         <h1 className="slide-in">Chantournage</h1>
         <div className="underline-char"></div>
-        <h2>
-          Une technique de découpe qui étend le champ des possibles en Art et
-          Design
-        </h2>
-
+        <div className="chartext">
+          <h2>Une technique de découpe qui étend </h2>
+          <span>le champ des possibles en Art et Design</span>
+        </div>
         <div className="proposx">
           <p>
             Mon intérêt pour le chantournage a pris racine après avoir découvert
@@ -196,7 +195,7 @@ const Chantournage = () => {
               loading="lazy"
             />
             <p>Contreplaqué, brou de noix et vernis aquarétane</p>
-            <p>Dimensions: L 46 x l 39 cm x p 4 cm</p>
+            <p>Dimensions : L 46 x l 39 cm x p 4 cm</p>
             <p>Price: 95€</p>
           </div>
           <div className="image-item">
@@ -236,7 +235,7 @@ const Chantournage = () => {
               loading="lazy"
             />
             <p>Contreplaqué, brou de noix</p> <p>peinture, vernis aquarétane</p>
-            <p>Dimensions: L 37 x l 24 x p 5 cm</p>
+            <p>Dimensions : L 37 x l 24 x p 5 cm</p>
             <p>Price: 140€</p>
           </div>
           <div className="image-item">
@@ -283,7 +282,7 @@ const Chantournage = () => {
             <p>Price: 250€</p>
           </div>
         </div>
-        <div className="propos">
+        <div className="proposx">
           <p>
             Autodidacte, j’ai perfectionné ma technique de chantournage,
             particulièrement inspirée à l&#39;approche de l’hiver et des fêtes
@@ -490,8 +489,8 @@ const Chantournage = () => {
         <div className="items8">
           <h3>Etapes de fabrication</h3>
         </div>
-        <div className="pic-item">
-          <div className="image-item">
+        <div className="pic-itemfab">
+          <div className="image-itemfab">
             <img
               src={manupic}
               alt="artiste"

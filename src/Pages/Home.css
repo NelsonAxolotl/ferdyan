@@ -46,3 +46,19 @@
   width: 100%;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .contain {
+    padding-bottom: 40px;
+  }
+
+  .picture {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .proposxx p {
+    margin: 20px;
+  }
+}

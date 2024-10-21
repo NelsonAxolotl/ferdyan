@@ -19,20 +19,27 @@ const Home = () => {
           <div className="picture">
             <div className="image-container">
               <Link to="/creation-sur-mesure">
-                <img src={escalier} alt="escalier" loading="lazy" />
+                <img src={escalier} alt="escalier" width="600" height="400" />
                 <div className="image-text">Création sur mesure</div>
               </Link>
             </div>
 
             <div className="image-container">
               <Link to="/reparation-restauration">
-                <img src={coffre} alt="coffres" loading="lazy" />
+                <img
+                  src={coffre}
+                  alt="coffres"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                />
                 <div className="image-text">Restauration de meuble</div>
               </Link>
             </div>
             <div className="image-container">
               <Link to="/chantournage">
-                <img src={cerf} alt="cerf" loading="lazy" />
+                <img src={cerf} alt="cerf" width="600" height="400" />
+
                 <div className="image-text">Chantournage</div>
               </Link>
             </div>

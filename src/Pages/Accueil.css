@@ -66,7 +66,7 @@
   margin-top: 20px;
 }
 
-.propos p {
+.proposa p {
   border: 1px solid white;
   border-radius: 5px;
   padding: 20px;
@@ -98,6 +98,10 @@
 }
 
 .propos4 span {
+  color: rgb(126, 58, 58);
+}
+
+.proposa span {
   color: rgb(126, 58, 58);
 }
 
@@ -181,24 +185,13 @@
   }
 }
 
-@media screen and (max-width: 880px) {
-  .propos p {
-    font-size: 1.2rem;
-    margin-top: 20px;
-  }
-
-  .picma {
-    margin-top: -40px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .main {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
 
   .main h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 0;
   }
 
@@ -206,14 +199,7 @@
     width: 300px;
     height: 300px;
   }
-
-  @keyframes underlineGrow {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 30%; /* La ligne grandit jusqu'à 100% de sa taille */
-    }
+  .propos p {
   }
 }
 
@@ -223,7 +209,7 @@
       width: 0;
     }
     100% {
-      width: 40%; /* La ligne grandit jusqu'à 100% de sa taille */
+      width: 60%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
 }

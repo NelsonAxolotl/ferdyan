@@ -176,7 +176,7 @@
   }
 
   .mail a {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .phone i {
@@ -184,24 +184,15 @@
   }
 
   .phone span {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .address p {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .icons {
     margin-bottom: 60px;
-  }
-
-  @keyframes underlineGrowContact {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 25%; /* La ligne grandit jusqu'à 100% de sa taille */
-    }
   }
 }
 
@@ -211,7 +202,7 @@
       width: 0;
     }
     100% {
-      width: 30%; /* La ligne grandit jusqu'à 100% de sa taille */
+      width: 45%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
 }

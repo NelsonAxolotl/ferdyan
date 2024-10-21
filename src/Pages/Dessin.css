@@ -69,15 +69,6 @@
   .galleries2 h2 {
     margin-top: 50px;
   }
-
-  @keyframes underlineGrowDess {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 25%; /* La ligne grandit jusqu'à 100% de sa taille */
-    }
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -86,7 +77,7 @@
       width: 0;
     }
     100% {
-      width: 30%; /* La ligne grandit jusqu'à 100% de sa taille */
+      width: 45%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
 }

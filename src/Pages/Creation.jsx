@@ -57,18 +57,24 @@ const Creation = () => {
             <img
               src={escaliers3}
               alt="bibliothèque sous escaliers"
+              width="200px"
+              height="280px"
               onClick={() => handleImageClick(escaliers3)}
               loading="lazy"
             />
             <img
               src={escaliers4}
               alt="bibliothèque sous escaliers"
+              width="200px"
+              height="280px"
               onClick={() => handleImageClick(escaliers4)}
               loading="lazy"
             />
             <img
               src={biblidraw}
               alt="bibliothèque dessin"
+              width="200px"
+              height="280px"
               onClick={() => handleImageClick(biblidraw)}
               loading="lazy"
             />
@@ -80,12 +86,16 @@ const Creation = () => {
               <img
                 src={enfant1}
                 alt="chambre enfant"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(enfant1)}
                 loading="lazy"
               />
               <img
                 src={enfant2}
                 alt="chambre enfant"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(enfant2)}
                 loading="lazy"
               />
@@ -99,12 +109,16 @@ const Creation = () => {
               <img
                 src={escaliers}
                 alt="escaliers"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(escaliers)}
                 loading="lazy"
               />
               <img
                 src={escaliers2}
                 alt="escaliers"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(escaliers2)}
                 loading="lazy"
               />
@@ -116,6 +130,8 @@ const Creation = () => {
             <img
               src={bureau}
               alt="bureau"
+              width="200px"
+              height="280px"
               onClick={() => handleImageClick(bureau)}
               loading="lazy"
             />
@@ -127,6 +143,8 @@ const Creation = () => {
               <img
                 src={biblio}
                 alt="bureau"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(biblio)}
                 loading="lazy"
               />
@@ -139,12 +157,16 @@ const Creation = () => {
               <img
                 src={boutique2}
                 alt="boutique"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(boutique2)}
                 loading="lazy"
               />
               <img
                 src={boutique}
                 alt="boutique"
+                width="200px"
+                height="280px"
                 onClick={() => handleImageClick(boutique)}
                 loading="lazy"
               />

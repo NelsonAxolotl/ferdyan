@@ -10,15 +10,13 @@ const dessin = () => {
   }, []);
   return (
     <>
-      <div className={`accueil-container ${fadeIn ? "fade-in" : ""}`}>
-        <div className="dess">
-          <h1 className="slide-in">Dessins</h1>
-          <div className="underline-dess"></div>
-          <div className="galleries2">
-            <h2>Galerie</h2>
-          </div>
-          <Gallery />
+      <div className="dess">
+        <h1 className="slide-in">Dessins</h1>
+        <div className="underline-dess"></div>
+        <div className="galleries2">
+          <h2>Galerie</h2>
         </div>
+        <Gallery />
       </div>
     </>
   );

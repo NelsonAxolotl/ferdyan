@@ -66,7 +66,10 @@ const Chantournage = () => {
           <p>
             Mon intérêt pour le chantournage a pris racine après avoir découvert
             un documentaire sur l&#39;histoire de{" "}
-            <Link to="https://fr.wikipedia.org/wiki/Joseph_Paul_Jernigan">
+            <Link
+              to="https://fr.wikipedia.org/wiki/Joseph_Paul_Jernigan"
+              target="_blank"
+            >
               <span>Joseph Paul Jernigan</span>
             </Link>
             , un prisonnier américain exécuté en 1993. <br />
@@ -75,7 +78,10 @@ const Chantournage = () => {
             Son cadavre a été congelé, puis découpé en 1 871 tranches de 1 mm
             d’épaisseur, de la tête aux pieds, dans le cadre du projet
             scientifique{" "}
-            <Link to="https://fr.wikipedia.org/wiki/Visible_Human_Project">
+            <Link
+              to="https://fr.wikipedia.org/wiki/Visible_Human_Project"
+              target="_blank"
+            >
               <span>« Visible Human Project »</span>
             </Link>
             . <br />
@@ -215,7 +221,7 @@ const Chantournage = () => {
         <div className="items3">
           <h3>Le Loup</h3>
         </div>
-        <div className="pic-item1">
+        <div className="pic-item">
           <div className="image-item">
             <img
               src={loup1}
@@ -518,7 +524,11 @@ const Chantournage = () => {
         <div className="overlay" onClick={handleCloseImage}>
           <div className="enlarged-image-container">
             <img src={enlargedImage} alt="Enlarged" />
-            <button className="close-button" onClick={handleCloseImage}>
+            <button
+              className="close-button"
+              onClick={handleCloseImage}
+              aria-label="Close image"
+            >
               ×
             </button>
           </div>

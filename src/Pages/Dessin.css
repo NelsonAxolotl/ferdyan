@@ -33,7 +33,7 @@
   }
 
   100% {
-    width: 20%; /* La ligne grandit jusqu'à 100% de sa taille */
+    width: 15%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
 
@@ -41,8 +41,8 @@
   font-size: 2rem;
   text-align: center;
   border: 2px solid rgb(164, 164, 164);
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   padding: 20px;
   border-radius: 5px;
   color: rgb(71, 71, 71);

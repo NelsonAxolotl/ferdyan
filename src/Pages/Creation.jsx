@@ -1,12 +1,12 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import "./Creation.css";
 import escaliers from "../Pics/escaliers.png";
 import escaliers2 from "../Pics/escaliers2.png";
 import escaliers3 from "../Pics/escaliers3.webp";
 import escaliers4 from "../Pics/escaliers4.webp";
+import biblidraw from "../Pics/biblidraw.webp";
 import biblio from "../Pics/biblio.webp";
 import bureau from "../Pics/bureau.webp";
-import bureau2 from "../Pics/bureau2.webp";
 import boutique from "../Pics/boutique.webp";
 import boutique2 from "../Pics/boutique2.webp";
 import enfant1 from "../Pics/enfant1.webp";
@@ -14,8 +14,6 @@ import enfant2 from "../Pics/enfant2.webp";
 
 const Creation = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
-  const creationRef = useRef(null);
-  const restorationRef = useRef(null);
 
   const handleImageClick = (image) => {
     setEnlargedImage(image);
@@ -25,38 +23,13 @@ const Creation = () => {
     setEnlargedImage(null);
   };
 
-  useEffect(() => {
-    const options = {
-      threshold: 0.1, // L'élément doit être au moins 10% visible pour déclencher l'effet
-    };
-
-    const handleIntersection = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("fade-in");
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    if (creationRef.current) observer.observe(creationRef.current);
-    if (restorationRef.current) observer.observe(restorationRef.current);
-
-    return () => {
-      if (creationRef.current) observer.unobserve(creationRef.current);
-      if (restorationRef.current) observer.unobserve(restorationRef.current);
-    };
-  }, []);
-
   return (
     <>
       <div className="creation">
-        <div className="titre">
-          <h1 className="slide-in">Création sur mesure</h1>
-        </div>
+        <h1 className="slide-in">Création sur mesure</h1>
+
         <div className="underline-crea"></div>
-        <div className="propos">
+        <div className="proposxx">
           <p>
             Passionnée par le design et l&#39;artisanat, je me spécialise dans
             la restauration et la création de meubles sur mesure. <br />
@@ -79,21 +52,106 @@ const Creation = () => {
           </p>
         </div>
 
-        <div className="gallerie3">
-          <h2>Galerie</h2>
+        <div className="pic-item10">
+          <div className="image-item6">
+            <img
+              src={escaliers3}
+              alt="bibliothèque sous escaliers"
+              onClick={() => handleImageClick(escaliers3)}
+              loading="lazy"
+            />
+            <img
+              src={escaliers4}
+              alt="bibliothèque sous escaliers"
+              onClick={() => handleImageClick(escaliers4)}
+              loading="lazy"
+            />
+            <img
+              src={biblidraw}
+              alt="bibliothèque dessin"
+              onClick={() => handleImageClick(biblidraw)}
+              loading="lazy"
+            />
+            <p>
+              Bibliothèque sous escalier conçue avec une partie amovible <br />
+              dans le cas d’un déménagement
+            </p>
+            <div className="image-item6">
+              <img
+                src={enfant1}
+                alt="chambre enfant"
+                onClick={() => handleImageClick(enfant1)}
+                loading="lazy"
+              />
+              <img
+                src={enfant2}
+                alt="chambre enfant"
+                onClick={() => handleImageClick(enfant2)}
+                loading="lazy"
+              />
+              <p>
+                Réaménagement d’une chambre d’enfant associant le
+                <br />
+                bureau d’origine à un ensemble de rangement et dressing
+              </p>
+            </div>
+            <div className="image-item6">
+              <img
+                src={escaliers}
+                alt="escaliers"
+                onClick={() => handleImageClick(escaliers)}
+                loading="lazy"
+              />
+              <img
+                src={escaliers2}
+                alt="escaliers"
+                onClick={() => handleImageClick(escaliers2)}
+                loading="lazy"
+              />
+
+              <p>Escaliers à pas japonnais, rangements intégrés</p>
+            </div>
+          </div>
+          <div className="image-item6">
+            <img
+              src={bureau}
+              alt="bureau"
+              onClick={() => handleImageClick(bureau)}
+              loading="lazy"
+            />
+            <p>
+              Bureau : structure en sapin <br />
+              revêtement en Corian
+            </p>
+            <div className="image-item6">
+              <img
+                src={biblio}
+                alt="bureau"
+                onClick={() => handleImageClick(biblio)}
+                loading="lazy"
+              />
+              <p>
+                Réaménagement d’une chambre d’enfant <br />
+                Dressing et bureau relooké
+              </p>
+            </div>
+            <div className="image-item6">
+              <img
+                src={boutique2}
+                alt="boutique"
+                onClick={() => handleImageClick(boutique2)}
+                loading="lazy"
+              />
+              <img
+                src={boutique}
+                alt="boutique"
+                onClick={() => handleImageClick(boutique)}
+                loading="lazy"
+              />
+              <p>Devanture boutique en lettrage peint</p>
+            </div>
+          </div>
         </div>
-        <img
-          src={escaliers3}
-          alt="bibliothèque sous escaliers"
-          onClick={() => handleImageClick(escaliers3)}
-          loading="lazy"
-        />
-        <img
-          src={escaliers4}
-          alt="bibliothèque sous escaliers"
-          onClick={() => handleImageClick(escaliers4)}
-          loading="lazy"
-        />
       </div>
 
       {enlargedImage && (

@@ -31,7 +31,7 @@
     width: 0;
   }
   100% {
-    width: 20%;
+    width: 15%;
   }
 }
 .mail,
@@ -90,13 +90,13 @@
 }
 /* Style pour le texte du téléphone */
 .phone span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: grey;
 }
 
 .address p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: grey;
 }
@@ -115,7 +115,7 @@
 
 /* Style pour les liens d'email */
 .mail a {
-  font-size: 1.5rem; /* Taille de la police */
+  font-size: 1.3rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
   color: grey; /* Couleur du texte */
   font-weight: bold; /* Poids de la police */

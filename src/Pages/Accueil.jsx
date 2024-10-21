@@ -5,12 +5,6 @@ import "./Accueil.css";
 
 const Accueil = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    // Déclencher l'animation de fondu entrant après que le composant soit monté
-    setFadeIn(true);
-  }, []);
 
   const handleImageClick = (image) => {
     setEnlargedImage(image);
@@ -19,9 +13,14 @@ const Accueil = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+  const [fadeIn, setFadeIn] = useState(false);
 
+  useEffect(() => {
+    // Déclencher l'animation de fondu entrant après que le composant soit monté
+    setFadeIn(true);
+  }, []);
   return (
-    <div className={`accueil-container ${fadeIn ? "fade-in" : ""}`}>
+    <>
       <div className="main">
         <h1 className="slide-in">Parcours</h1>
         <div className="underline"></div>
@@ -114,7 +113,7 @@ const Accueil = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

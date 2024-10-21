@@ -62,7 +62,7 @@
   }
 
   100% {
-    width: 50%; /* La ligne grandit jusqu'à 100% de sa taille */
+    width: 48%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
 .propos {
@@ -78,7 +78,26 @@
   line-height: 26px;
   margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+  color: rgb(79, 76, 76);
+}
+
+.proposxx {
+  margin-top: 30px;
+}
+
+.proposxx p {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 1020px;
+  text-align: justify;
+  line-height: 26px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   opacity: 0;
   animation: fadeIn 3s ease-out forwards;
   color: rgb(79, 76, 76);
@@ -168,8 +187,9 @@
   font-size: 2rem;
   text-align: center;
   border: 2px solid rgb(164, 164, 164);
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 20px;
+  font-weight: normal;
   border-radius: 5px;
   color: rgb(71, 71, 71);
 }
@@ -184,14 +204,14 @@
 .items p {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .items h3 {
   font-size: 1.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-top: 50px;
   color: rgb(126, 58, 58);
   font-weight: 500;
@@ -221,7 +241,7 @@
 .items2cerf p {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -244,7 +264,7 @@
 .items3 p {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 30px;
 }
 
@@ -330,7 +350,7 @@
 .marks p {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 30px;
   margin-bottom: -20px;
 }
@@ -368,7 +388,7 @@
 .image-item p {
   color: black;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 20px;
   text-align: center;
 }
@@ -386,11 +406,42 @@
   text-align: center;
 }
 
+.image-item4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  text-align: center; /* Ensures the text below the image is centered */
+  gap: 60px;
+}
+
+.image-item5 {
+  object-fit: cover;
+  text-align: center; /* Ensures the text below the image is centered */
+  margin-top: 60px;
+}
+
+.image-item6 {
+  object-fit: cover;
+  text-align: center; /* Ensures the text below the image is centered */
+  margin-top: 60px;
+}
+
+.image-item6 p {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+
 .pic-item1 {
   display: flex;
   gap: 60px; /* Espace entre les images */
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .pic-item1 img {
@@ -449,6 +500,50 @@
   transform: scale(1.03);
 }
 
+.pic-item8 {
+  display: flex;
+  gap: 60px; /* Espace entre les images */
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.pic-item8 img {
+  width: 320px;
+  height: 260px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.pic-item8 img:hover {
+  transform: scale(1.03);
+}
+
+.pic-item10 {
+  display: flex;
+  gap: 20px; /* Espace entre les images */
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.pic-item10 img {
+  width: 200px;
+  height: 280px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.pic-item10 img:hover {
+  transform: scale(1.03);
+}
+
 .pic-itemfab {
   display: flex;
   gap: 30px; /* Espace entre les images */
@@ -468,46 +563,6 @@
 
 .pic-itemfab img:hover {
   transform: scale(1.03);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  object-fit: cover;
-}
-
-.enlarged-image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-}
-
-.enlarged-image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  margin: auto;
-}
-
-.close-button {
-  position: absolute;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-  top: 10px;
-  right: 10px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "./Intro.css"; // Assurez-vous d'avoir des styles pour le fondu
+import "./Intro.css";
 import logoManu from "../Pics/logomanu.webp";
 
 const Intro = ({ onComplete }) => {

@@ -6,14 +6,13 @@
   height: 100vh;
   background-color: white;
   overflow: hidden;
-  /* Animation pour le fondu entrant initial */
   animation: fadeIn 3s ease-in-out;
 }
 
 .intro-logo {
-  width: 100%; /* Occupe 100% de la largeur du parent */
-  max-width: 500px; /* Taille maximale sur les grands écrans */
-  height: auto; /* Maintient le ratio de l'image */
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 @keyframes fadeIn {
@@ -27,7 +26,7 @@
 }
 
 .fade-out {
-  animation: fadeOut 2s ease-in-out forwards; /* Animation de fondu sortant */
+  animation: fadeOut 2s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
@@ -44,6 +43,6 @@
 
 @media screen and (max-width: 768px) {
   .intro-logo {
-    max-width: 300px; /* Limitez à 300px pour les écrans plus petits */
+    max-width: 300px;
   }
 }

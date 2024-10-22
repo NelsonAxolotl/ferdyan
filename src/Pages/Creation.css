@@ -54,18 +54,6 @@
   color: rgb(71, 71, 71);
 }
 
-@keyframes slideIn2 {
-  0% {
-    transform: translateX(-235%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @keyframes underlineGrow-crea {
   0% {
     width: 0;

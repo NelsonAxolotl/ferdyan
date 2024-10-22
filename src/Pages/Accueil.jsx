@@ -13,12 +13,7 @@ const Accueil = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
-  const [fadeIn, setFadeIn] = useState(false);
 
-  useEffect(() => {
-    // Déclencher l'animation de fondu entrant après que le composant soit monté
-    setFadeIn(true);
-  }, []);
   return (
     <>
       <div className="main">

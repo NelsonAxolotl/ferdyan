@@ -2,12 +2,6 @@ import { useEffect, useState } from "react";
 import Gallery from "../Components/Gallery";
 import "./Dessin.css";
 const dessin = () => {
-  const [fadeIn, setFadeIn] = useState(false);
-
-  useEffect(() => {
-    // Déclencher l'animation de fondu entrant après que le composant soit monté
-    setFadeIn(true);
-  }, []);
   return (
     <>
       <div className="dess">

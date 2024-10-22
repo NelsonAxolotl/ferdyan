@@ -1,6 +1,6 @@
 /* Container for the gallery */
 .gallery-container1 {
-  width: 60%; /* Container width */
+  width: 65%; /* Container width */
   margin: 0 auto; /* Centering container horizontally */
   /* Padding inside the container */
   margin-bottom: 40px; /* Space below the container */
@@ -9,7 +9,7 @@
 /* Style for gallery images */
 .gallery-image1 {
   width: 72%; /* Full width of the container */
-  height: 470px; /* Fixed height for images */
+  height: 500px; /* Fixed height for images */
   object-fit: cover; /* Cover the area while preserving aspect ratio */
   border-radius: 10px; /* Rounded corners for images */
   display: block; /* Block-level display */
@@ -88,12 +88,12 @@
   /* Adjustments for gallery container on small screens */
   .gallery-container1 {
     width: 100%; /* Full width */
-    padding: 10px; /* Reduced padding */
+    padding: 0 30px; /* Reduced padding */
   }
 
   /* Adjustments for gallery image on small screens */
   .gallery-image1 {
-    height: 300px; /* Reduced height */
-    width: 350px;
+    height: 400px; /* Reduced height */
+    width: 100%;
   }
 }

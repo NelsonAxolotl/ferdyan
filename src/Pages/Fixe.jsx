@@ -18,8 +18,14 @@ const Fixe = () => {
 
   return (
     <>
-      <div className="char">
-        <h1 className="slide-in">Réparation / Restauration</h1>
+      <div className="fix">
+        <div className="crea">
+          <h1 className="slide-in">
+            Réparation <span> /&nbsp;</span>
+          </h1>
+
+          <h2 className="slide-in">Restauration</h2>
+        </div>
         <div className="underline-fixe"></div>
 
         <div className="proposxx">

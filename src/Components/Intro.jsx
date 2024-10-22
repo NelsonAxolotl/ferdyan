@@ -24,7 +24,6 @@ const Intro = ({ onComplete }) => {
         alt="Logo Emmanuelle Ferdyan"
         className="intro-logo"
       />
-      <div className={`intro-subtitle ${fadeOut ? "fade-out" : ""}`}></div>
     </div>
   );
 };

@@ -26,8 +26,10 @@ const Creation = () => {
   return (
     <>
       <div className="creation">
-        <h1 className="slide-in">Création sur mesure</h1>
-
+        <div className="crea">
+          <h1 className="slide-in">Création </h1>
+          <h2 className="slide-in">sur mesure</h2>
+        </div>
         <div className="underline-crea"></div>
         <div className="proposxx">
           <p>
@@ -78,10 +80,12 @@ const Creation = () => {
               onClick={() => handleImageClick(biblidraw)}
               loading="lazy"
             />
-            <p>
-              Bibliothèque sous escalier conçue avec une partie amovible <br />
-              dans le cas d’un déménagement
-            </p>
+
+            <p>Bibliothèque sous escalier</p>
+            <div className="crea-text">
+              <span>conçue avec une partie amovible </span>
+              <span>dans le cas d’un déménagement</span>
+            </div>
             <div className="image-item6">
               <img
                 src={enfant1}
@@ -99,11 +103,12 @@ const Creation = () => {
                 onClick={() => handleImageClick(enfant2)}
                 loading="lazy"
               />
-              <p>
-                Réaménagement d’une chambre d’enfant associant le
-                <br />
-                bureau d’origine à un ensemble de rangement et dressing
-              </p>
+
+              <p>Réaménagement d’une chambre d’enfant </p>
+              <div className="crea-text">
+                <span>associant le bureau d’origine à </span>
+                <span>un ensemble de rangement et dressing</span>
+              </div>
             </div>
             <div className="image-item6">
               <img
@@ -135,10 +140,9 @@ const Creation = () => {
               onClick={() => handleImageClick(bureau)}
               loading="lazy"
             />
-            <p>
-              Bureau : structure en sapin <br />
-              revêtement en Corian
-            </p>
+            <p>Bureau : structure en sapin </p>
+            <span>revêtement en Corian</span>
+
             <div className="image-item6">
               <img
                 src={biblio}
@@ -148,10 +152,9 @@ const Creation = () => {
                 onClick={() => handleImageClick(biblio)}
                 loading="lazy"
               />
-              <p>
-                Réaménagement d’une chambre d’enfant <br />
-                Dressing et bureau relooké
-              </p>
+              <p>Réaménagement d’une chambre d’enfant </p>
+
+              <span>Dressing et bureau relooké</span>
             </div>
             <div className="image-item6">
               <img

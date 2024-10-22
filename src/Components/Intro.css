@@ -10,27 +10,10 @@
   animation: fadeIn 3s ease-in-out;
 }
 
-.intro-text {
-  font-family: "Qwitcher Grypen", cursive;
-  font-size: 7rem;
-  color: black;
-  opacity: 0;
-  animation: fadeInText 3s ease-in-out forwards;
-}
-
-.intro-subtitle {
-  font-family: "Qwitcher Grypen", cursive;
-  font-size: 3rem;
-  color: grey;
-  opacity: 0;
-  margin-top: 1rem;
-  /* Animation du sous-titre avec un délai réduit */
-  animation: slideIn 1.5s ease-in-out 1s forwards; /* Délai d'animation réduit pour l'affichage après le nom */
-}
-
 .intro-logo {
-  width: 500px; /* Ajustez selon la taille de votre logo */
-  height: auto;
+  width: 100%; /* Occupe 100% de la largeur du parent */
+  max-width: 500px; /* Taille maximale sur les grands écrans */
+  height: auto; /* Maintient le ratio de l'image */
 }
 
 @keyframes fadeIn {
@@ -39,28 +22,6 @@
   }
 
   100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -81,42 +42,8 @@
 
 /* Styles Responsive */
 
-@media screen and (max-width: 1200px) {
-  .intro-text {
-    font-size: 6rem; /* Réduit la taille de la police pour les écrans plus petits */
-  }
-
-  .intro-subtitle {
-    font-size: 2.5rem; /* Ajuste la taille de la police pour le sous-titre */
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .intro-text {
-    font-size: 5rem; /* Réduit encore la taille de la police pour les écrans plus petits */
-  }
-
-  .intro-subtitle {
-    font-size: 2rem; /* Ajuste la taille de la police pour le sous-titre */
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .intro-text {
-    font-size: 4rem; /* Taille de police plus petite pour les petits écrans */
-  }
-
-  .intro-subtitle {
-    font-size: 1.5rem; /* Ajuste la taille de la police pour le sous-titre */
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .intro-text {
-    font-size: 3rem; /* Taille de police la plus petite pour les très petits écrans */
-  }
-
-  .intro-subtitle {
-    font-size: 1.2rem; /* Ajuste la taille de la police pour le sous-titre */
+  .intro-logo {
+    max-width: 300px; /* Limitez à 300px pour les écrans plus petits */
   }
 }

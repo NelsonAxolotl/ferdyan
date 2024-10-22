@@ -91,6 +91,14 @@
   ); /* Couleur du hover ou autre style que vous souhaitez appliquer */
 }
 
+.responsive {
+  display: none;
+}
+
+.non-responsive {
+  display: inline;
+}
+
 @media screen and (max-width: 1300px) and (min-width: 760px) {
   .navbar-burger {
     display: none;
@@ -177,7 +185,7 @@
   .navbar-link {
     display: block;
     padding: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
     color: grey;
   }
@@ -268,5 +276,21 @@
   .navbar-link:hover {
     color: rgb(126, 58, 58);
     border-bottom: none;
+  }
+  .navbar-item {
+    text-align: center; /* Center text inside the menu */
+  }
+
+  .non-responsive {
+    display: none;
+  }
+
+  .responsive {
+    display: block;
+    text-align: center;
+  }
+
+  .responsive span {
+    display: block;
   }
 }

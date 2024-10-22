@@ -178,7 +178,7 @@ const Chantournage = () => {
         <div className="items2">
           <h3>Le Cerf</h3>
         </div>
-        <div className="items2cerf"></div>
+
         <div className="pic-item">
           <div className="image-item">
             <img
@@ -187,14 +187,15 @@ const Chantournage = () => {
               onClick={() => handleImageClick(cerf2)}
               loading="lazy"
             />
-
             <img
               src={cerf1}
               alt="cerf"
               onClick={() => handleImageClick(cerf1)}
               loading="lazy"
             />
-            <p>Contreplaqué, brou de noix et vernis aquarétane</p>
+            <div className="cerf-text">
+              <p>Contreplaqué, brou de noix,</p> <p>vernis aquarétane</p>
+            </div>
             <p>Dimensions : L 46 x l 39 cm x p 4 cm</p>
             <p>Price: 95€</p>
           </div>
@@ -212,7 +213,10 @@ const Chantournage = () => {
               onClick={() => handleImageClick(cerf3)}
               loading="lazy"
             />
-            <p>Contreplaqué, brou de noix et vernis aquarétane</p>
+            <div className="cerf-text">
+              <p>Contreplaqué, brou de noix,</p>
+              <p> vernis aquarétane</p>
+            </div>
             <p>Dimensions: L51 x l 37,5 x p 5 cm</p>
             <p>Price: 130€</p>
           </div>
@@ -234,7 +238,8 @@ const Chantournage = () => {
               onClick={() => handleImageClick(loup2)}
               loading="lazy"
             />
-            <p>Contreplaqué, brou de noix</p> <p>peinture, vernis aquarétane</p>
+            <p>Contreplaqué, brou de noix, peinture,</p>{" "}
+            <p>vernis aquarétane</p>
             <p>Dimensions : L 37 x l 24 x p 5 cm</p>
             <p>Price: 140€</p>
           </div>
@@ -252,8 +257,8 @@ const Chantournage = () => {
               onClick={() => handleImageClick(loup4)}
               loading="lazy"
             />
-            <p>Contreplaqué, brou de noix</p>
-            <p>acrylique noire, vernis aquarétane</p>
+            <p>Contreplaqué, brou de noix, acrylique noire, </p>
+            <p>vernis aquarétane</p>
             <p>Dimensions: L 37 x l 24 x p 5 cm</p>
             <p>Price: 140€</p>
           </div>
@@ -277,7 +282,10 @@ const Chantournage = () => {
               onClick={() => handleImageClick(taureau)}
               loading="lazy"
             />
-            <p>Contreplaqué, brou de noix et vernis aquarétane</p>
+            <div className="cerf-text">
+              <p>Contreplaqué, brou de noix,</p>
+              <p> vernis aquarétane</p>
+            </div>
             <p>Dimensions : L 48 x l 58 x p 6 cm</p>
             <p>Price: 250€</p>
           </div>
@@ -368,11 +376,9 @@ const Chantournage = () => {
               onClick={() => handleImageClick(noel5)}
               loading="lazy"
             />
-            <p>
-              Cadre-photo Grand Cerf <br />
-              Contreplaqué <br />
-              carton bois vernis
-            </p>
+            <p>Cadre-photo Grand Cerf</p>
+            <p>Contreplaqué </p>
+            <p>carton bois vernis</p>
             <p>Diamètre photo 9 cm</p>
             <p>prix : 10€</p>
           </div>
@@ -383,11 +389,9 @@ const Chantournage = () => {
               onClick={() => handleImageClick(noel6)}
               loading="lazy"
             />
-            <p>
-              Cadre-photo Petit Cerf <br />
-              contreplaqué <br />
-              carton bois vernis
-            </p>
+            <p>Cadre-photo Petit Cerf </p>
+            <p>contreplaqué</p>
+            <p>carton bois vernis</p>
             <p>Dimension photo d'identité</p>
             <p>prix : 7€</p>
           </div>
@@ -399,11 +403,9 @@ const Chantournage = () => {
               onClick={() => handleImageClick(noel7)}
               loading="lazy"
             />
-            <p>
-              Cadre-photo pailletée <br />
-              Contreplaqué, carton bois <br />
-              pailletes vernis
-            </p>
+            <p>Cadre-photo pailletée</p>
+            <p>Contreplaqué, carton bois </p>
+            <p>pailletes vernis</p>
             <p>Diamètre photo 9 cm</p>
             <p>prix : 12€</p>
           </div>
@@ -414,10 +416,17 @@ const Chantournage = () => {
               onClick={() => handleImageClick(noel8)}
               loading="lazy"
             />
-            <p>
-              Flocon en corian <br />
-              <br /> <br />
-            </p>
+            <p>Flocon en corian </p>
+            <span>
+              <br />
+            </span>
+            <span>
+              <br />
+            </span>
+            <span>
+              <br />
+            </span>
+
             <p>Diamètre 11 cm</p>
             <p>prix : 12€</p>
           </div>

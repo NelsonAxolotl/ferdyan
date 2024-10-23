@@ -267,7 +267,7 @@ const Chantournage = () => {
           <h3>Le Taureau</h3>
         </div>
 
-        <div className="pic-item">
+        <div className="pic-item4">
           <div className="image-item">
             <img
               src={taureau1}
@@ -345,7 +345,7 @@ const Chantournage = () => {
           </div>
         </div>
 
-        <div className="pic-item2">
+        <div className="pic-item4">
           <div className="image-item">
             <img
               src={bougeoirs5}
@@ -434,7 +434,7 @@ const Chantournage = () => {
         <div className="items6">
           <h3>Dessous de plat</h3>
         </div>
-        <div className="pic-item2">
+        <div className="pic-item4">
           <div className="image-item">
             <img
               src={plat}
@@ -459,7 +459,7 @@ const Chantournage = () => {
         <div className="items5">
           <h3>Repose couteau</h3>
         </div>
-        <div className="pic-item">
+        <div className="pic-itemfab">
           <div className="image-item">
             <img
               src={repose}

@@ -141,7 +141,7 @@
 }
 
 .propos4 p:nth-child(1) {
-  animation-delay: 5s; /* Délai pour le quatrième paragraphe */
+  animation-delay: 1.5s; /* Délai pour le quatrième paragraphe */
 }
 
 @keyframes fadeIn {
@@ -171,9 +171,15 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .main h1 {
-    margin-top: 80px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .main h1 {
+    margin-top: 100px;
   }
 }
 
@@ -198,6 +204,15 @@
   .picma img {
     width: 300px;
     height: 300px;
+  }
+
+  @keyframes underlineGrow {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 35%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
   }
 }
 

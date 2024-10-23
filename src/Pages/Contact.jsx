@@ -46,7 +46,12 @@ const Contact = () => {
           </div>
           <div className="icons">
             <div className="facebook">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.facebook.com/share/6UYmdLdVgbVBgwvp/
+"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-facebook"></i>
               </a>
             </div>

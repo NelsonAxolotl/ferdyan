@@ -52,18 +52,8 @@ const Nav = () => {
             className: "slideInDown-1",
           },
           {
-            path: "/reparation-restauration",
-            label: (
-              <>
-                <span className="non-responsive">
-                  Réparation / Restauration
-                </span>
-                <span className="responsive">
-                  <span>Réparation</span>
-                  <span>Restauration</span>
-                </span>
-              </>
-            ),
+            path: "/reparation",
+            label: "Réparation ",
             className: "slideInDown-2",
           },
           {

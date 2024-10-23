@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Gallery from "../Components/Gallery";
 import "./Dessin.css";
 const dessin = () => {

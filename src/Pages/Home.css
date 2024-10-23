@@ -47,6 +47,18 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1300px) {
+  .picture {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .picture {
+    margin-top: 40px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contain {
     padding-bottom: 40px;
@@ -56,6 +68,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-top: -60px;
   }
 
   .proposxx p {

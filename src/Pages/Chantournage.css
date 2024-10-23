@@ -80,7 +80,7 @@
   }
 
   100% {
-    width: 48%; /* La ligne grandit jusqu'à 100% de sa taille */
+    width: 25%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
 .propos {
@@ -294,7 +294,7 @@
 
 .items4 h3 {
   font-size: 1.8rem;
-  margin-top: 30px;
+  margin-top: 70px;
   color: rgb(126, 58, 58);
   font-weight: 500;
 }
@@ -307,7 +307,7 @@
 
 .items5 h3 {
   font-size: 1.8rem;
-  margin-top: 30px;
+  margin-top: 70px;
   margin-bottom: 50px;
   color: rgb(126, 58, 58);
   font-weight: 500;
@@ -321,7 +321,7 @@
 
 .items6 h3 {
   font-size: 1.8rem;
-  margin-top: 40px;
+  margin: 40px;
   color: rgb(126, 58, 58);
   font-weight: 500;
 }
@@ -335,8 +335,8 @@
 
 .items7 h3 {
   font-size: 1.8rem;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 60px;
+
   color: rgb(126, 58, 58);
   font-weight: 500;
   text-decoration: underline;
@@ -359,7 +359,7 @@
 
 .items8 h3 {
   font-size: 1.8rem;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 50px;
   color: rgb(126, 58, 58);
   font-weight: 500;
@@ -519,6 +519,26 @@
   transform: scale(1.03);
 }
 
+.pic-item4 {
+  display: flex;
+  gap: 60px; /* Espace entre les images */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pic-item4 img {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.pic-item4 img:hover {
+  transform: scale(1.03);
+}
 .pic-item8 {
   display: flex;
   gap: 60px; /* Espace entre les images */
@@ -587,19 +607,27 @@
   margin-bottom: 20px;
 }
 
-.fix h2 {
-  font-family: "quicksand", cursive;
-  font-size: 3rem;
-  padding-top: 180px;
-  font-weight: bold;
-  color: rgba(23, 22, 22, 0.811);
-  text-align: center;
-  margin-bottom: 20px;
+@media screen and (max-width: 1300px) {
+  .char h1 {
+    margin-top: 50px;
+  }
+
+  .fix h1 {
+    margin-top: 50px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1042px) {
   .char h1 {
     margin-top: 80px;
+  }
+
+  .fix h1 {
+    margin-top: 80px;
+  }
+
+  .proposxx {
+    margin: 0 20px;
   }
 }
 
@@ -622,6 +650,49 @@
   }
 
   .pic-item1 img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .pic-item2 {
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Deux colonnes pour aligner deux images par ligne */
+    gap: 20px; /* Espace entre les images */
+  }
+
+  .pic-item2 img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .pic-item4 img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .image-item {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto; /* Assure que l'image garde ses proportions */
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .proposx p {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .pic-itemfab img {
     width: 300px;
     height: 300px;
     margin-bottom: 10px;
@@ -679,25 +750,17 @@
   .fix h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    margin: 0;
   }
 
   .fix h2 {
     font-size: 2.5rem;
     padding-top: 0;
+    margin: 10px;
   }
 
   .crea span {
     display: none;
-  }
-
-  @keyframes underlineGrow-fixe {
-    0% {
-      width: 0;
-    }
-
-    100% {
-      width: 70%; /* La ligne grandit jusqu'à 100% de sa taille */
-    }
   }
 
   .pic-item8 {
@@ -746,10 +809,6 @@
     gap: 30px; /* Espace entre les images */
     margin-bottom: 40px;
     margin-top: 20px;
-  }
-
-  .pic-item2 img {
-    width: 300px;
   }
 
   .pic-item3 {
@@ -837,6 +896,23 @@
     font-size: 1.4rem;
     margin-top: 10px;
   }
+  @keyframes underlineGrow-char {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+
+  @keyframes underlineGrow-fixe {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 40%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -846,6 +922,15 @@
     }
     100% {
       width: 80%; /* La ligne grandit jusqu'à 100% de sa taille */
+    }
+  }
+
+  @keyframes underlineGrow-fixe {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 60%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
 }

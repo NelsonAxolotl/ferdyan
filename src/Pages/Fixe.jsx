@@ -20,11 +20,7 @@ const Fixe = () => {
     <>
       <div className="fix">
         <div className="crea">
-          <h1 className="slide-in">
-            Réparation <span> /&nbsp;</span>
-          </h1>
-
-          <h2 className="slide-in">Restauration</h2>
+          <h1 className="slide-in">Réparation</h1>
         </div>
         <div className="underline-fixe"></div>
 

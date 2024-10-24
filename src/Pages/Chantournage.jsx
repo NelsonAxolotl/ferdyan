@@ -197,7 +197,7 @@ const Chantournage = () => {
               <p>Contreplaqué, brou de noix,</p> <p>vernis aquarétane</p>
             </div>
             <p>Dimensions : L 46 x l 39 cm x p 4 cm</p>
-            <p>Price: 95€</p>
+            <p>Prix : 95€</p>
           </div>
           <div className="image-item">
             <img
@@ -218,7 +218,7 @@ const Chantournage = () => {
               <p> vernis aquarétane</p>
             </div>
             <p>Dimensions: L51 x l 37,5 x p 5 cm</p>
-            <p>Price: 130€</p>
+            <p>Prix : 130€</p>
           </div>
         </div>
         <div className="items3">
@@ -241,7 +241,7 @@ const Chantournage = () => {
             <p>Contreplaqué, brou de noix, peinture,</p>{" "}
             <p>vernis aquarétane</p>
             <p>Dimensions : L 37 x l 24 x p 5 cm</p>
-            <p>Price: 140€</p>
+            <p>Prix : 140€</p>
           </div>
           <div className="image-item">
             <img
@@ -260,7 +260,7 @@ const Chantournage = () => {
             <p>Contreplaqué, brou de noix, acrylique noire, </p>
             <p>vernis aquarétane</p>
             <p>Dimensions: L 37 x l 24 x p 5 cm</p>
-            <p>Price: 140€</p>
+            <p>Prix : 140€</p>
           </div>
         </div>
         <div className="items3">
@@ -287,7 +287,7 @@ const Chantournage = () => {
               <p> vernis aquarétane</p>
             </div>
             <p>Dimensions : L 48 x l 58 x p 6 cm</p>
-            <p>Price: 250€</p>
+            <p>Prix : 250€</p>
           </div>
         </div>
         <div className="proposx">
@@ -322,7 +322,7 @@ const Chantournage = () => {
             />
             <p>Contreplaqué, vernis acrylique</p>
             <p>Diamètre 15 cm, hauteur 2 cm</p>
-            <p>Price: 25€</p>
+            <p>Prix : 25€</p>
           </div>
 
           <div className="image-item">
@@ -341,7 +341,7 @@ const Chantournage = () => {
             />
             <p>Contreplaqué, vernis acrylique</p>
             <p>Diamètre 15 cm, hauteur 2 cm</p>
-            <p>Price: 35€</p>
+            <p>Prix : 35€</p>
           </div>
         </div>
 
@@ -362,7 +362,7 @@ const Chantournage = () => {
             />
             <p>Corian</p>
             <p>Diamètre 15 cm, hauteur 2,4 cm</p>
-            <p>Price: 35€</p>
+            <p>Prix : 35€</p>
           </div>
         </div>
         <div className="items4">
@@ -451,7 +451,7 @@ const Chantournage = () => {
             />
             <p>Chêne massif huilé</p>
             <p>Diamètre 24 cm</p>
-            <p>Price: 35€</p>
+            <p>Prix : 35€</p>
           </div>
         </div>
         <div className="items5">

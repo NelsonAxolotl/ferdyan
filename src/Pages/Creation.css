@@ -33,6 +33,7 @@
   text-align: center;
   margin-bottom: 20px;
   margin-left: 10px;
+  animation: slideIn2 2s ease-out forwards;
 }
 
 .underline-crea {
@@ -116,6 +117,18 @@
   justify-content: center; /* Centrer les images à droite */
   margin-left: 50px; /* Ajuste l'espace pour aligner à droite */
   margin-top: 230px;
+}
+
+@keyframes slideIn2 {
+  0% {
+    transform: translateX(-75%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1300px) {

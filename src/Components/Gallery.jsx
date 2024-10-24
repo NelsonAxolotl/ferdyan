@@ -19,8 +19,6 @@ import odalisque5 from "../Pics/odalisque5.webp";
 import odalisque6 from "../Pics/odalisque6.webp";
 import main from "../Pics/main1.webp";
 import main1 from "../Pics/main2.webp";
-import fauteuil from "../Pics/fauteuil.webp";
-import biblidraw from "../Pics/biblidraw.webp";
 import draw from "../Pics/1.webp";
 import draw2 from "../Pics/5.webp";
 import draw3 from "../Pics/6.webp";
@@ -43,8 +41,6 @@ const images = [
   { src: odalisque6, alt: "Odalisque 6" },
   { src: main, alt: "Main 1" },
   { src: main1, alt: "Main 2" },
-  { src: fauteuil, alt: "Fauteuil" },
-  { src: biblidraw, alt: "Bibliothèque" },
   { src: draw, alt: "dessin" },
   { src: draw2, alt: "dessin" },
   { src: draw3, alt: "dessin" },

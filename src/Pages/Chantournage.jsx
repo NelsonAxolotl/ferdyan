@@ -340,7 +340,7 @@ const Chantournage = () => {
               loading="lazy"
             />
             <p>Contreplaqué, vernis acrylique</p>
-            <p>Diamètre 15 cm, hauteur 2 cm ;</p>
+            <p>Diamètre 15 cm, hauteur 2 cm</p>
             <p>Price: 35€</p>
           </div>
         </div>
@@ -366,7 +366,7 @@ const Chantournage = () => {
           </div>
         </div>
         <div className="items4">
-          <h3>Suspension de Noël</h3>
+          <h3>Suspensions de Noël</h3>
         </div>
         <div className="pic-item2">
           <div className="image-item1">
@@ -489,7 +489,7 @@ const Chantournage = () => {
             <div className="reposetext">
               <p>Vieux chêne et Corian</p>
               <p>L 6 cm x l 1,6 cm </p>
-              <p>prix : 4€ l'unité, avec aou sans stickers</p>
+              <p>prix : 4€ l'unité, avec ou sans stickers</p>
             </div>
           </div>
         </div>

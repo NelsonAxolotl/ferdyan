@@ -8,7 +8,7 @@
 
 /* Style for gallery images */
 .gallery-image1 {
-  width: 72%; /* Full width of the container */
+  width: 70%; /* Full width of the container */
   height: 500px; /* Fixed height for images */
   object-fit: cover; /* Cover the area while preserving aspect ratio */
   border-radius: 10px; /* Rounded corners for images */

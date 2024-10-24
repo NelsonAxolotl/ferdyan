@@ -31,7 +31,7 @@ const Home = () => {
             </div>
 
             <div className="image-container">
-              <Link to="/reparation-restauration">
+              <Link to="/reparation">
                 <img
                   src={coffre}
                   alt="coffres"
@@ -39,7 +39,7 @@ const Home = () => {
                   height="400"
                   loading="lazy"
                 />
-                <div className="image-text">Restauration de meuble</div>
+                <div className="image-text">Réparation de meuble</div>
               </Link>
             </div>
 

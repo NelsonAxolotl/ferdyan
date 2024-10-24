@@ -57,6 +57,21 @@
   .picture {
     margin-top: 40px;
   }
+
+  .image-container {
+    width: 350px;
+  }
+
+  .picture .image-container:nth-child(3) {
+    grid-column: span 2; /* Le cerf occupe toute la largeur sous les deux premières images */
+    justify-self: center; /* Centre l'image du cerf */
+  }
+
+  .picture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Ajuste l'espacement entre les images */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -73,5 +88,9 @@
 
   .proposxx p {
     margin: 20px;
+  }
+
+  .image-container {
+    width: 300px;
   }
 }

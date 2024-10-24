@@ -56,7 +56,11 @@ const Contact = () => {
               </a>
             </div>
             <div className="insta">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com/emmanuelle_ferdyan/profilecard/?igsh=MXZiZ3dvM29zajVidQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>

@@ -629,6 +629,13 @@
   .proposxx {
     margin: 0 20px;
   }
+
+  .pic-item8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 920px) {
@@ -761,13 +768,6 @@
 
   .crea span {
     display: none;
-  }
-
-  .pic-item8 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
   }
 
   .items h3 {

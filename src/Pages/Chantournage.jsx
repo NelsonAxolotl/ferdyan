@@ -439,7 +439,6 @@ const Chantournage = () => {
             <img
               src={plat}
               alt="plat"
-              style={{ width: "250px" }}
               onClick={() => handleImageClick(plat)}
               loading="lazy"
             />
@@ -447,7 +446,6 @@ const Chantournage = () => {
             <img
               src={plat2}
               alt="plat"
-              style={{ width: "250px" }}
               onClick={() => handleImageClick(plat2)}
               loading="lazy"
             />

@@ -80,7 +80,7 @@
   }
 
   100% {
-    width: 25%; /* La ligne grandit jusqu'à 100% de sa taille */
+    width: 22%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
 .propos {
@@ -667,13 +667,12 @@
       2,
       1fr
     ); /* Deux colonnes pour aligner deux images par ligne */
-    gap: 20px; /* Espace entre les images */
+    gap: 10px; /* Espace entre les images */
   }
 
   .pic-item2 img {
-    width: 300px;
+    width: 280px;
     height: 300px;
-    margin-bottom: 10px;
   }
 
   .pic-item4 img {
@@ -788,7 +787,7 @@
   }
 
   .pic-item img {
-    width: 300px;
+    width: 290px;
   }
 
   .pic-item1 {
@@ -800,15 +799,6 @@
 
   .pic-item1 img {
     width: 300px;
-  }
-
-  .pic-item2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px; /* Espace entre les images */
-    margin-bottom: 40px;
-    margin-top: 20px;
   }
 
   .pic-item3 {
@@ -836,13 +826,21 @@
   }
 
   .items4 h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .pic-item4 {
+    margin-top: 0;
+  }
+
+  .pic-item4 img {
+    width: 290px;
   }
 
   .items5 h3 {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 
   .items6 h3 {
@@ -867,7 +865,8 @@
   }
 
   .items8 h3 {
-    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
   }
 
   .pic-itemfab {
@@ -877,7 +876,7 @@
   }
 
   .pic-itemfab img {
-    width: 300px;
+    width: 290px;
   }
 
   .propos p {
@@ -896,6 +895,7 @@
     font-size: 1.4rem;
     margin-top: 10px;
   }
+
   @keyframes underlineGrow-char {
     0% {
       width: 0;
@@ -916,6 +916,31 @@
 }
 
 @media screen and (max-width: 500px) {
+  .pic-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Espace entre les images */
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .pic-item2 img {
+    width: 300px;
+  }
+
+  .pic-item img {
+    width: 300px;
+  }
+
+  .pic-item4 img {
+    width: 300px;
+  }
+
+  .pic-itemfab img {
+    width: 300px;
+  }
+
   @keyframes underlineGrow-char {
     0% {
       width: 0;

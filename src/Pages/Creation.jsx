@@ -11,6 +11,12 @@ import boutique from "../Pics/boutique.webp";
 import boutique2 from "../Pics/boutique2.webp";
 import enfant1 from "../Pics/enfant1.webp";
 import enfant2 from "../Pics/enfant2.webp";
+import reno1 from "../Pics/reno1.webp";
+import reno2 from "../Pics/reno3.webp";
+import reno5 from "../Pics/reno5.webp";
+import reno6 from "../Pics/reno6.webp";
+import reno3 from "../Pics/reno2.webp";
+import reno4 from "../Pics/reno4.webp";
 
 const Creation = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
@@ -174,6 +180,67 @@ const Creation = () => {
                 loading="lazy"
               />
               <p>Devanture boutique en lettrage peint</p>
+            </div>
+          </div>
+        </div>
+        <div className="crea-titre">
+          <h2>Avant / Après</h2>
+        </div>
+        <div className="pic-flex">
+          <div className="pic-item10">
+            <div className="image-item6">
+              <img
+                src={reno1}
+                alt="renovation salle bain"
+                width="200px"
+                height="280px"
+                onClick={() => handleImageClick(reno1)}
+                loading="lazy"
+              />
+              <img
+                src={reno2}
+                alt="renovation salle de bain"
+                width="200px"
+                height="280px"
+                onClick={() => handleImageClick(reno2)}
+                loading="lazy"
+              />
+              <div className="image-item6">
+                <img
+                  src={reno5}
+                  alt="renovation cuisine"
+                  width="200px"
+                  height="280px"
+                  onClick={() => handleImageClick(reno5)}
+                  loading="lazy"
+                />
+                <img
+                  src={reno6}
+                  alt="renovation cuisine"
+                  width="200px"
+                  height="280px"
+                  onClick={() => handleImageClick(reno6)}
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="image-item6 right-images">
+              <img
+                src={reno4}
+                alt="renovation salle de bain"
+                width="200px"
+                height="280px"
+                onClick={() => handleImageClick(reno4)}
+                loading="lazy"
+              />
+              <img
+                src={reno3}
+                alt="renovation salle de bain"
+                width="200px"
+                height="280px"
+                onClick={() => handleImageClick(reno3)}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

@@ -22,8 +22,8 @@ const Home = () => {
                 <img
                   src={escalier}
                   alt="escalier"
-                  width="853"
-                  height="1280"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
                 <div className="image-text">Création sur mesure</div>
@@ -35,8 +35,8 @@ const Home = () => {
                 <img
                   src={coffre}
                   alt="coffres"
-                  width="567"
-                  height="621"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
                 <div className="image-text">Réparation de meuble</div>
@@ -48,8 +48,8 @@ const Home = () => {
                 <img
                   src={cerf}
                   alt="cerf"
-                  width="1200"
-                  height="1600"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
 

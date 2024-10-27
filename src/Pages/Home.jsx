@@ -19,13 +19,7 @@ const Home = () => {
           <div className="picture">
             <div className="image-container">
               <Link to="/creation-sur-mesure">
-                <img
-                  src={escalier}
-                  alt="escalier"
-                  width="600"
-                  height="400"
-                  loading="lazy"
-                />
+                <img src={escalier} alt="escalier" width="600" height="400" />
                 <div className="image-text">Création sur mesure</div>
               </Link>
             </div>

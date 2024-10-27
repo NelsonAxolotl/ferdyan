@@ -7,10 +7,10 @@ import bougeoirs3 from "../Pics/bougeoir3.webp";
 import bougeoirs4 from "../Pics/bougeoir4.webp";
 import bougeoirs5 from "../Pics/bougeoir5.webp";
 import bougeoirs6 from "../Pics/bougeoir6.webp";
-import cerf1 from "../Pics/cerf1.webp";
-import cerf2 from "../Pics/cerf2.webp";
-import cerf3 from "../Pics/Cerf3.webp";
-import cerf4 from "../Pics/cerf4.webp";
+import cerf2 from "../Pics/cerf1.webp";
+import cerf1 from "../Pics/cerf2.webp";
+import cerf4 from "../Pics/Cerf3.webp";
+import cerf3 from "../Pics/cerf4.webp";
 import loup1 from "../Pics/loup1.webp";
 import loup2 from "../Pics/loup2.webp";
 import loup3 from "../Pics/loup3.webp";
@@ -37,13 +37,231 @@ import taureau from "../Pics/taureau2.webp";
 import manupic from "../Pics/manupic.webp";
 const Chantournage = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
-
   const handleImageClick = (image) => {
     setEnlargedImage(image);
   };
 
   const handleCloseImage = () => {
     setEnlargedImage(null);
+  };
+  const images = [cerf1, cerf2];
+  const [enlargedImage1, setEnlargedImage1] = useState(null);
+  const [currentIndex1, setCurrentIndex1] = useState(0);
+
+  const handleImageClick1 = (index) => {
+    setCurrentIndex1(index);
+    setEnlargedImage1(images[index]);
+  };
+  const handleCloseImage1 = () => {
+    setEnlargedImage1(null);
+  };
+
+  const handleNextImage1 = () => {
+    setCurrentIndex1((currentIndex1 + 1) % images.length);
+    setEnlargedImage1(images[(currentIndex1 + 1) % images.length]);
+  };
+
+  const handlePrevImage1 = () => {
+    setCurrentIndex1((currentIndex1 - 1 + images.length) % images.length);
+    setEnlargedImage1(
+      images[(currentIndex1 - 1 + images.length) % images.length]
+    );
+  };
+  const images2 = [cerf3, cerf4];
+  const [enlargedImage2, setEnlargedImage2] = useState(null);
+  const [currentIndex2, setCurrentIndex2] = useState(0);
+
+  const handleImageClick2 = (index) => {
+    setCurrentIndex2(index);
+    setEnlargedImage2(images2[index]);
+  };
+
+  const handleCloseImage2 = () => {
+    setEnlargedImage2(null);
+  };
+
+  const handleNextImage2 = () => {
+    setCurrentIndex2((currentIndex2 + 1) % images2.length);
+    setEnlargedImage2(images2[(currentIndex2 + 1) % images2.length]);
+  };
+
+  const handlePrevImage2 = () => {
+    setCurrentIndex2((currentIndex2 - 1 + images2.length) % images2.length);
+    setEnlargedImage2(
+      images2[(currentIndex2 - 1 + images2.length) % images2.length]
+    );
+  };
+  const images3 = [loup1, loup2];
+  const [enlargedImage3, setEnlargedImage3] = useState(null);
+  const [currentIndex3, setCurrentIndex3] = useState(0);
+
+  const handleImageClick3 = (index) => {
+    setCurrentIndex3(index);
+    setEnlargedImage3(images3[index]);
+  };
+
+  const handleCloseImage3 = () => {
+    setEnlargedImage3(null);
+  };
+
+  const handleNextImage3 = () => {
+    setCurrentIndex3((currentIndex3 + 1) % images3.length);
+    setEnlargedImage3(images3[(currentIndex3 + 1) % images3.length]);
+  };
+
+  const handlePrevImage3 = () => {
+    setCurrentIndex3((currentIndex3 - 1 + images3.length) % images3.length);
+    setEnlargedImage3(
+      images3[(currentIndex3 - 1 + images3.length) % images3.length]
+    );
+  };
+  const images4 = [loup3, loup4];
+  const [enlargedImage4, setEnlargedImage4] = useState(null);
+  const [currentIndex4, setCurrentIndex4] = useState(0);
+
+  const handleImageClick4 = (index) => {
+    setCurrentIndex4(index);
+    setEnlargedImage4(images4[index]);
+  };
+
+  const handleCloseImage4 = () => {
+    setEnlargedImage4(null);
+  };
+
+  const handleNextImage4 = () => {
+    setCurrentIndex4((currentIndex4 + 1) % images4.length);
+    setEnlargedImage4(images4[(currentIndex4 + 1) % images4.length]);
+  };
+
+  const handlePrevImage4 = () => {
+    setCurrentIndex4((currentIndex4 - 1 + images4.length) % images4.length);
+    setEnlargedImage4(
+      images4[(currentIndex4 - 1 + images4.length) % images4.length]
+    );
+  };
+
+  const images5 = [taureau1, taureau];
+  const [enlargedImage5, setEnlargedImage5] = useState(null);
+  const [currentIndex5, setCurrentIndex5] = useState(0);
+
+  const handleImageClick5 = (index) => {
+    setCurrentIndex5(index);
+    setEnlargedImage5(images5[index]);
+  };
+
+  const handleCloseImage5 = () => {
+    setEnlargedImage5(null);
+  };
+
+  const handleNextImage5 = () => {
+    setCurrentIndex5((currentIndex5 + 1) % images5.length);
+    setEnlargedImage5(images5[(currentIndex5 + 1) % images5.length]);
+  };
+
+  const handlePrevImage5 = () => {
+    setCurrentIndex5((currentIndex5 - 1 + images5.length) % images5.length);
+    setEnlargedImage5(
+      images5[(currentIndex5 - 1 + images5.length) % images5.length]
+    );
+  };
+  const images6 = [bougeoirs1, bougeoirs2];
+  const [enlargedImage6, setEnlargedImage6] = useState(null);
+  const [currentIndex6, setCurrentIndex6] = useState(0);
+
+  const handleImageClick6 = (index) => {
+    setCurrentIndex6(index);
+    setEnlargedImage6(images6[index]);
+  };
+
+  const handleCloseImage6 = () => {
+    setEnlargedImage6(null);
+  };
+
+  const handleNextImage6 = () => {
+    setCurrentIndex6((currentIndex6 + 1) % images6.length);
+    setEnlargedImage6(images6[(currentIndex6 + 1) % images6.length]);
+  };
+
+  const handlePrevImage6 = () => {
+    setCurrentIndex6((currentIndex6 - 1 + images6.length) % images6.length);
+    setEnlargedImage6(
+      images6[(currentIndex6 - 1 + images6.length) % images6.length]
+    );
+  };
+
+  const images7 = [bougeoirs3, bougeoirs4];
+  const [enlargedImage7, setEnlargedImage7] = useState(null);
+  const [currentIndex7, setCurrentIndex7] = useState(0);
+
+  const handleImageClick7 = (index) => {
+    setCurrentIndex7(index);
+    setEnlargedImage7(images7[index]);
+  };
+
+  const handleCloseImage7 = () => {
+    setEnlargedImage7(null);
+  };
+
+  const handleNextImage7 = () => {
+    setCurrentIndex7((currentIndex7 + 1) % images7.length);
+    setEnlargedImage7(images7[(currentIndex7 + 1) % images7.length]);
+  };
+
+  const handlePrevImage7 = () => {
+    setCurrentIndex7((currentIndex7 - 1 + images7.length) % images7.length);
+    setEnlargedImage7(
+      images7[(currentIndex7 - 1 + images7.length) % images7.length]
+    );
+  };
+
+  const images8 = [bougeoirs5, bougeoirs6];
+  const [enlargedImage8, setEnlargedImage8] = useState(null);
+  const [currentIndex8, setCurrentIndex8] = useState(0);
+
+  const handleImageClick8 = (index) => {
+    setCurrentIndex8(index);
+    setEnlargedImage8(images8[index]);
+  };
+
+  const handleCloseImage8 = () => {
+    setEnlargedImage8(null);
+  };
+
+  const handleNextImage8 = () => {
+    setCurrentIndex8((currentIndex8 + 1) % images8.length);
+    setEnlargedImage8(images8[(currentIndex8 + 1) % images8.length]);
+  };
+
+  const handlePrevImage8 = () => {
+    setCurrentIndex8((currentIndex8 - 1 + images8.length) % images8.length);
+    setEnlargedImage8(
+      images8[(currentIndex8 - 1 + images8.length) % images8.length]
+    );
+  };
+
+  const images9 = [plat, plat2];
+  const [enlargedImage9, setEnlargedImage9] = useState(null);
+  const [currentIndex9, setCurrentIndex9] = useState(0);
+
+  const handleImageClick9 = (index) => {
+    setCurrentIndex9(index);
+    setEnlargedImage9(images9[index]);
+  };
+
+  const handleCloseImage9 = () => {
+    setEnlargedImage9(null);
+  };
+
+  const handleNextImage9 = () => {
+    setCurrentIndex9((currentIndex9 + 1) % images9.length);
+    setEnlargedImage9(images9[(currentIndex9 + 1) % images9.length]);
+  };
+
+  const handlePrevImage9 = () => {
+    setCurrentIndex9((currentIndex9 - 1 + images9.length) % images9.length);
+    setEnlargedImage9(
+      images9[(currentIndex9 - 1 + images9.length) % images9.length]
+    );
   };
   const [fadeIn, setFadeIn] = useState(false);
 
@@ -181,38 +399,65 @@ const Chantournage = () => {
 
         <div className="pic-item">
           <div className="image-item">
-            <img
-              src={cerf2}
-              alt="cerf"
-              onClick={() => handleImageClick(cerf2)}
-              loading="lazy"
-            />
-            <img
-              src={cerf1}
-              alt="cerf"
-              onClick={() => handleImageClick(cerf1)}
-              loading="lazy"
-            />
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`cerf${index + 1}`}
+                onClick={() => handleImageClick1(index)}
+                loading="lazy"
+              />
+            ))}
+
+            {enlargedImage1 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage1}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage1} alt="Enlarged cerf" />
+                  <button className="next-button" onClick={handleNextImage1}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage1}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="cerf-text">
-              <p>Contreplaqué, brou de noix,</p> <p>vernis aquarétane</p>
+              <p>Contreplaqué, brou de noix,</p> <p>vernis aquaréthane</p>
             </div>
             <p>Dimensions : L 46 x l 39 cm x p 4 cm</p>
             <p>Prix : 95€</p>
           </div>
           <div className="image-item">
-            <img
-              src={cerf4}
-              alt="cerf"
-              onClick={() => handleImageClick(cerf4)}
-              loading="lazy"
-            />
+            {images2.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`cerf${index + 3}`} // Adjustez pour les cerfs 3 et 4
+                onClick={() => handleImageClick2(index)}
+                loading="lazy"
+              />
+            ))}
 
-            <img
-              src={cerf3}
-              alt="cerf"
-              onClick={() => handleImageClick(cerf3)}
-              loading="lazy"
-            />
+            {enlargedImage2 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage2}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage2} alt="Enlarged cerf" />
+                  <button className="next-button" onClick={handleNextImage2}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage2}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="cerf-text">
               <p>Contreplaqué, brou de noix,</p>
               <p> vernis aquarétane</p>
@@ -226,37 +471,62 @@ const Chantournage = () => {
         </div>
         <div className="pic-item">
           <div className="image-item">
-            <img
-              src={loup1}
-              alt="loup"
-              onClick={() => handleImageClick(loup1)}
-              loading="lazy"
-            />
-            <img
-              src={loup2}
-              alt="loup"
-              onClick={() => handleImageClick(loup2)}
-              loading="lazy"
-            />
+            {images3.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`loup${index + 1}`}
+                onClick={() => handleImageClick3(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage3 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage3}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage3} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage3}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage3}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Contreplaqué, brou de noix, peinture,</p>{" "}
             <p>vernis aquarétane</p>
             <p>Dimensions : L 37 x l 24 x p 5 cm</p>
             <p>Prix : 140€</p>
           </div>
           <div className="image-item">
-            <img
-              src={loup3}
-              alt="loup"
-              onClick={() => handleImageClick(loup3)}
-              loading="lazy"
-            />
-
-            <img
-              src={loup4}
-              alt="loup"
-              onClick={() => handleImageClick(loup4)}
-              loading="lazy"
-            />
+            {images4.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`loup${index + 3}`}
+                onClick={() => handleImageClick4(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage4 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage4}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage4} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage4}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage4}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Contreplaqué, brou de noix, acrylique noire, </p>
             <p>vernis aquarétane</p>
             <p>Dimensions: L 37 x l 24 x p 5 cm</p>
@@ -269,19 +539,31 @@ const Chantournage = () => {
 
         <div className="pic-item4">
           <div className="image-item">
-            <img
-              src={taureau1}
-              alt="taureau"
-              onClick={() => handleImageClick(taureau1)}
-              loading="lazy"
-            />
-
-            <img
-              src={taureau}
-              alt="taureau"
-              onClick={() => handleImageClick(taureau)}
-              loading="lazy"
-            />
+            {images5.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`taueau${index + 1}`}
+                onClick={() => handleImageClick5(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage5 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage5}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage5} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage5}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage5}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="cerf-text">
               <p>Contreplaqué, brou de noix,</p>
               <p> vernis aquarétane</p>
@@ -307,38 +589,62 @@ const Chantournage = () => {
         </div>
         <div className="pic-item">
           <div className="image-item">
-            <img
-              src={bougeoirs1}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs1)}
-              loading="lazy"
-            />
-
-            <img
-              src={bougeoirs2}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs2)}
-              loading="lazy"
-            />
+            {images6.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`bougeoir${index + 1}`}
+                onClick={() => handleImageClick6(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage6 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage6}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage6} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage6}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage6}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Contreplaqué, vernis acrylique</p>
             <p>Diamètre 15 cm, hauteur 2 cm</p>
             <p>Prix : 25€</p>
           </div>
 
           <div className="image-item">
-            <img
-              src={bougeoirs3}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs3)}
-              loading="lazy"
-            />
-
-            <img
-              src={bougeoirs4}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs4)}
-              loading="lazy"
-            />
+            {images7.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`bougeoir${index + 3}`}
+                onClick={() => handleImageClick7(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage7 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage7}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage7} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage7}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage7}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Contreplaqué, vernis acrylique</p>
             <p>Diamètre 15 cm, hauteur 2 cm</p>
             <p>Prix : 35€</p>
@@ -347,19 +653,31 @@ const Chantournage = () => {
 
         <div className="pic-item4">
           <div className="image-item">
-            <img
-              src={bougeoirs5}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs5)}
-              loading="lazy"
-            />
-
-            <img
-              src={bougeoirs6}
-              alt="bougeoir"
-              onClick={() => handleImageClick(bougeoirs6)}
-              loading="lazy"
-            />
+            {images8.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`bougeoir${index + 1}`}
+                onClick={() => handleImageClick8(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage8 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage8}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage8} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage8}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage8}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Corian</p>
             <p>Diamètre 15 cm, hauteur 2,4 cm</p>
             <p>Prix : 35€</p>
@@ -436,19 +754,31 @@ const Chantournage = () => {
         </div>
         <div className="pic-item4">
           <div className="image-item">
-            <img
-              src={plat}
-              alt="plat"
-              onClick={() => handleImageClick(plat)}
-              loading="lazy"
-            />
-
-            <img
-              src={plat2}
-              alt="plat"
-              onClick={() => handleImageClick(plat2)}
-              loading="lazy"
-            />
+            {images9.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`bougeoir${index + 1}`}
+                onClick={() => handleImageClick9(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage9 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage9}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage9} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage9}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage9}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <p>Chêne massif huilé</p>
             <p>Diamètre 24 cm</p>
             <p>Prix : 35€</p>

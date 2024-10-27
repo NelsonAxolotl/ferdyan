@@ -49,6 +49,8 @@ const Contact = () => {
               <a
                 href="https://www.facebook.com/share/6UYmdLdVgbVBgwvp/
 "
+                aria-label="Emmanuelle Ferdyan"
+                title="Suivez-moi sur Facebook"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,6 +60,8 @@ const Contact = () => {
             <div className="insta">
               <a
                 href="https://www.instagram.com/emmanuelle_ferdyan/profilecard/?igsh=MXZiZ3dvM29zajVidQ=="
+                aria-label="Emmanuelle ferdyan"
+                title="Suivez-moi sur Instagram"
                 target="_blank"
                 rel="noopener noreferrer"
               >

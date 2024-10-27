@@ -54,20 +54,33 @@ const Chantournage = () => {
       setEnlargedImage1(images[index]);
     }
   };
+
   const handleCloseImage1 = () => {
     setEnlargedImage1(null);
   };
 
   const handleNextImage1 = () => {
-    setCurrentIndex1((currentIndex1 + 1) % images.length);
-    setEnlargedImage1(images[(currentIndex1 + 1) % images.length]);
+    const nextIndex = (currentIndex1 + 1) % images.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images.length
+    ) {
+      setCurrentIndex1(nextIndex);
+      setEnlargedImage1(images[nextIndex]);
+    }
   };
 
   const handlePrevImage1 = () => {
-    setCurrentIndex1((currentIndex1 - 1 + images.length) % images.length);
-    setEnlargedImage1(
-      images[(currentIndex1 - 1 + images.length) % images.length]
-    );
+    const prevIndex = (currentIndex1 - 1 + images.length) % images.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images.length
+    ) {
+      setCurrentIndex1(prevIndex);
+      setEnlargedImage1(images[prevIndex]);
+    }
   };
   const images2 = [cerf3, cerf4];
   const [enlargedImage2, setEnlargedImage2] = useState(null);
@@ -85,15 +98,27 @@ const Chantournage = () => {
   };
 
   const handleNextImage2 = () => {
-    setCurrentIndex2((currentIndex2 + 1) % images2.length);
-    setEnlargedImage2(images2[(currentIndex2 + 1) % images2.length]);
+    const nextIndex = (currentIndex2 + 1) % images2.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images2.length
+    ) {
+      setCurrentIndex2(nextIndex);
+      setEnlargedImage2(images2[nextIndex]);
+    }
   };
 
   const handlePrevImage2 = () => {
-    setCurrentIndex2((currentIndex2 - 1 + images2.length) % images2.length);
-    setEnlargedImage2(
-      images2[(currentIndex2 - 1 + images2.length) % images2.length]
-    );
+    const prevIndex = (currentIndex2 - 1 + images2.length) % images2.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images2.length
+    ) {
+      setCurrentIndex2(prevIndex);
+      setEnlargedImage2(images2[prevIndex]);
+    }
   };
   const images3 = [loup1, loup2];
   const [enlargedImage3, setEnlargedImage3] = useState(null);
@@ -111,15 +136,27 @@ const Chantournage = () => {
   };
 
   const handleNextImage3 = () => {
-    setCurrentIndex3((currentIndex3 + 1) % images3.length);
-    setEnlargedImage3(images3[(currentIndex3 + 1) % images3.length]);
+    const nextIndex = (currentIndex3 + 1) % images3.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images3.length
+    ) {
+      setCurrentIndex3(nextIndex);
+      setEnlargedImage3(images3[nextIndex]);
+    }
   };
 
   const handlePrevImage3 = () => {
-    setCurrentIndex3((currentIndex3 - 1 + images3.length) % images3.length);
-    setEnlargedImage3(
-      images3[(currentIndex3 - 1 + images3.length) % images3.length]
-    );
+    const prevIndex = (currentIndex3 - 1 + images3.length) % images3.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images3.length
+    ) {
+      setCurrentIndex3(prevIndex);
+      setEnlargedImage3(images3[prevIndex]);
+    }
   };
   const images4 = [loup3, loup4];
   const [enlargedImage4, setEnlargedImage4] = useState(null);
@@ -137,17 +174,28 @@ const Chantournage = () => {
   };
 
   const handleNextImage4 = () => {
-    setCurrentIndex4((currentIndex4 + 1) % images4.length);
-    setEnlargedImage4(images4[(currentIndex4 + 1) % images4.length]);
+    const nextIndex = (currentIndex4 + 1) % images4.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images4.length
+    ) {
+      setCurrentIndex4(nextIndex);
+      setEnlargedImage4(images4[nextIndex]);
+    }
   };
 
   const handlePrevImage4 = () => {
-    setCurrentIndex4((currentIndex4 - 1 + images4.length) % images4.length);
-    setEnlargedImage4(
-      images4[(currentIndex4 - 1 + images4.length) % images4.length]
-    );
+    const prevIndex = (currentIndex4 - 1 + images4.length) % images4.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images4.length
+    ) {
+      setCurrentIndex4(prevIndex);
+      setEnlargedImage4(images4[prevIndex]);
+    }
   };
-
   const images5 = [taureau1, taureau];
   const [enlargedImage5, setEnlargedImage5] = useState(null);
   const [currentIndex5, setCurrentIndex5] = useState(0);
@@ -164,15 +212,27 @@ const Chantournage = () => {
   };
 
   const handleNextImage5 = () => {
-    setCurrentIndex5((currentIndex5 + 1) % images5.length);
-    setEnlargedImage5(images5[(currentIndex5 + 1) % images5.length]);
+    const nextIndex = (currentIndex5 + 1) % images5.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images5.length
+    ) {
+      setCurrentIndex5(nextIndex);
+      setEnlargedImage5(images5[nextIndex]);
+    }
   };
 
   const handlePrevImage5 = () => {
-    setCurrentIndex5((currentIndex5 - 1 + images5.length) % images5.length);
-    setEnlargedImage5(
-      images5[(currentIndex5 - 1 + images5.length) % images5.length]
-    );
+    const prevIndex = (currentIndex5 - 1 + images5.length) % images5.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images5.length
+    ) {
+      setCurrentIndex5(prevIndex);
+      setEnlargedImage5(images5[prevIndex]);
+    }
   };
   const images6 = [bougeoirs1, bougeoirs2];
   const [enlargedImage6, setEnlargedImage6] = useState(null);
@@ -190,15 +250,27 @@ const Chantournage = () => {
   };
 
   const handleNextImage6 = () => {
-    setCurrentIndex6((currentIndex6 + 1) % images6.length);
-    setEnlargedImage6(images6[(currentIndex6 + 1) % images6.length]);
+    const nextIndex = (currentIndex6 + 1) % images6.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images6.length
+    ) {
+      setCurrentIndex6(nextIndex);
+      setEnlargedImage6(images6[nextIndex]);
+    }
   };
 
   const handlePrevImage6 = () => {
-    setCurrentIndex6((currentIndex6 - 1 + images6.length) % images6.length);
-    setEnlargedImage6(
-      images6[(currentIndex6 - 1 + images6.length) % images6.length]
-    );
+    const prevIndex = (currentIndex6 - 1 + images6.length) % images6.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images6.length
+    ) {
+      setCurrentIndex6(prevIndex);
+      setEnlargedImage6(images6[prevIndex]);
+    }
   };
 
   const images7 = [bougeoirs3, bougeoirs4];
@@ -217,18 +289,30 @@ const Chantournage = () => {
   };
 
   const handleNextImage7 = () => {
-    setCurrentIndex7((currentIndex7 + 1) % images7.length);
-    setEnlargedImage7(images7[(currentIndex7 + 1) % images7.length]);
+    const nextIndex = (currentIndex7 + 1) % images7.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images7.length
+    ) {
+      setCurrentIndex7(nextIndex);
+      setEnlargedImage7(images7[nextIndex]);
+    }
   };
 
   const handlePrevImage7 = () => {
-    setCurrentIndex7((currentIndex7 - 1 + images7.length) % images7.length);
-    setEnlargedImage7(
-      images7[(currentIndex7 - 1 + images7.length) % images7.length]
-    );
+    const prevIndex = (currentIndex7 - 1 + images7.length) % images7.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images7.length
+    ) {
+      setCurrentIndex7(prevIndex);
+      setEnlargedImage7(images7[prevIndex]);
+    }
   };
 
-  const images8 = [bougeoirs5, bougeoirs6];
+  const images8 = [bougeoirs5, bougeoirs6]; // Remplacez bougeoirs5 et bougeoirs6 par vos images
   const [enlargedImage8, setEnlargedImage8] = useState(null);
   const [currentIndex8, setCurrentIndex8] = useState(0);
 
@@ -244,18 +328,29 @@ const Chantournage = () => {
   };
 
   const handleNextImage8 = () => {
-    setCurrentIndex8((currentIndex8 + 1) % images8.length);
-    setEnlargedImage8(images8[(currentIndex8 + 1) % images8.length]);
+    const nextIndex = (currentIndex8 + 1) % images8.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images8.length
+    ) {
+      setCurrentIndex8(nextIndex);
+      setEnlargedImage8(images8[nextIndex]);
+    }
   };
 
   const handlePrevImage8 = () => {
-    setCurrentIndex8((currentIndex8 - 1 + images8.length) % images8.length);
-    setEnlargedImage8(
-      images8[(currentIndex8 - 1 + images8.length) % images8.length]
-    );
+    const prevIndex = (currentIndex8 - 1 + images8.length) % images8.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images8.length
+    ) {
+      setCurrentIndex8(prevIndex);
+      setEnlargedImage8(images8[prevIndex]);
+    }
   };
-
-  const images9 = [plat, plat2];
+  const images9 = [plat, plat2]; // Assurez-vous que plat et plat2 sont définis
   const [enlargedImage9, setEnlargedImage9] = useState(null);
   const [currentIndex9, setCurrentIndex9] = useState(0);
 
@@ -271,15 +366,27 @@ const Chantournage = () => {
   };
 
   const handleNextImage9 = () => {
-    setCurrentIndex9((currentIndex9 + 1) % images9.length);
-    setEnlargedImage9(images9[(currentIndex9 + 1) % images9.length]);
+    const nextIndex = (currentIndex9 + 1) % images9.length;
+    if (
+      Number.isInteger(nextIndex) &&
+      nextIndex >= 0 &&
+      nextIndex < images9.length
+    ) {
+      setCurrentIndex9(nextIndex);
+      setEnlargedImage9(images9[nextIndex]);
+    }
   };
 
   const handlePrevImage9 = () => {
-    setCurrentIndex9((currentIndex9 - 1 + images9.length) % images9.length);
-    setEnlargedImage9(
-      images9[(currentIndex9 - 1 + images9.length) % images9.length]
-    );
+    const prevIndex = (currentIndex9 - 1 + images9.length) % images9.length;
+    if (
+      Number.isInteger(prevIndex) &&
+      prevIndex >= 0 &&
+      prevIndex < images9.length
+    ) {
+      setCurrentIndex9(prevIndex);
+      setEnlargedImage9(images9[prevIndex]);
+    }
   };
   const [fadeIn, setFadeIn] = useState(false);
 

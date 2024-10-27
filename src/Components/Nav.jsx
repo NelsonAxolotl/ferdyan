@@ -38,8 +38,8 @@ const Nav = () => {
           <img
             src={logo}
             alt="logo Ferdyan"
-            width="290px"
-            height="120px"
+            width="600px"
+            height="251px"
             loading="eager"
           />
         </Link>

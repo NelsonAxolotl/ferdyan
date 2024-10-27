@@ -48,8 +48,8 @@ const Home = () => {
                 <img
                   src={cerf}
                   alt="cerf"
-                  width="1200"
-                  height="1600"
+                  width="600"
+                  height="400"
                   loading="lazy"
                 />
 

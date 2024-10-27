@@ -106,7 +106,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                width="auto"
+                width="600px"
                 height="400px"
                 className={`gallery-image1 ${image.className || ""}`}
                 loading="lazy"

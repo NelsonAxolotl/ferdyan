@@ -40,12 +40,16 @@ const Fixe = () => {
               src={commode2}
               alt="commode"
               onClick={() => handleImageClick(commode2)}
+              width="400px"
+              height="260px"
               loading="lazy"
             />
             <img
               src={commode1}
               alt="commode"
               onClick={() => handleImageClick(commode1)}
+              width="400px"
+              height="260px"
               loading="lazy"
             />
 
@@ -54,6 +58,8 @@ const Fixe = () => {
                 src={coffre}
                 alt="coffre"
                 onClick={() => handleImageClick(coffre)}
+                width="400px"
+                height="260px"
                 loading="lazy"
               />
             </div>
@@ -63,12 +69,16 @@ const Fixe = () => {
               src={chaise}
               alt="chaise"
               onClick={() => handleImageClick(chaise)}
+              width="400px"
+              height="260px"
               loading="lazy"
             />
             <img
               src={chaise2}
               alt="chaise"
               onClick={() => handleImageClick(chaise2)}
+              width="400px"
+              height="260px"
               loading="lazy"
             />
           </div>

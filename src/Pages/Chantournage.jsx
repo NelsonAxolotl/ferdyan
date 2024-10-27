@@ -49,8 +49,10 @@ const Chantournage = () => {
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
   const handleImageClick1 = (index) => {
-    setCurrentIndex1(index);
-    setEnlargedImage1(images[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images.length) {
+      setCurrentIndex1(index);
+      setEnlargedImage1(images[index]);
+    }
   };
   const handleCloseImage1 = () => {
     setEnlargedImage1(null);
@@ -72,8 +74,10 @@ const Chantournage = () => {
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   const handleImageClick2 = (index) => {
-    setCurrentIndex2(index);
-    setEnlargedImage2(images2[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images2.length) {
+      setCurrentIndex2(index);
+      setEnlargedImage2(images2[index]);
+    }
   };
 
   const handleCloseImage2 = () => {
@@ -96,8 +100,10 @@ const Chantournage = () => {
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
   const handleImageClick3 = (index) => {
-    setCurrentIndex3(index);
-    setEnlargedImage3(images3[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images3.length) {
+      setCurrentIndex3(index);
+      setEnlargedImage3(images3[index]);
+    }
   };
 
   const handleCloseImage3 = () => {
@@ -120,8 +126,10 @@ const Chantournage = () => {
   const [currentIndex4, setCurrentIndex4] = useState(0);
 
   const handleImageClick4 = (index) => {
-    setCurrentIndex4(index);
-    setEnlargedImage4(images4[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images4.length) {
+      setCurrentIndex4(index);
+      setEnlargedImage4(images4[index]);
+    }
   };
 
   const handleCloseImage4 = () => {
@@ -145,8 +153,10 @@ const Chantournage = () => {
   const [currentIndex5, setCurrentIndex5] = useState(0);
 
   const handleImageClick5 = (index) => {
-    setCurrentIndex5(index);
-    setEnlargedImage5(images5[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images5.length) {
+      setCurrentIndex5(index);
+      setEnlargedImage5(images5[index]);
+    }
   };
 
   const handleCloseImage5 = () => {
@@ -169,8 +179,10 @@ const Chantournage = () => {
   const [currentIndex6, setCurrentIndex6] = useState(0);
 
   const handleImageClick6 = (index) => {
-    setCurrentIndex6(index);
-    setEnlargedImage6(images6[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images6.length) {
+      setCurrentIndex6(index);
+      setEnlargedImage6(images6[index]);
+    }
   };
 
   const handleCloseImage6 = () => {
@@ -194,8 +206,10 @@ const Chantournage = () => {
   const [currentIndex7, setCurrentIndex7] = useState(0);
 
   const handleImageClick7 = (index) => {
-    setCurrentIndex7(index);
-    setEnlargedImage7(images7[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images7.length) {
+      setCurrentIndex7(index);
+      setEnlargedImage7(images7[index]);
+    }
   };
 
   const handleCloseImage7 = () => {
@@ -219,8 +233,10 @@ const Chantournage = () => {
   const [currentIndex8, setCurrentIndex8] = useState(0);
 
   const handleImageClick8 = (index) => {
-    setCurrentIndex8(index);
-    setEnlargedImage8(images8[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images8.length) {
+      setCurrentIndex8(index);
+      setEnlargedImage8(images8[index]);
+    }
   };
 
   const handleCloseImage8 = () => {
@@ -244,8 +260,10 @@ const Chantournage = () => {
   const [currentIndex9, setCurrentIndex9] = useState(0);
 
   const handleImageClick9 = (index) => {
-    setCurrentIndex9(index);
-    setEnlargedImage9(images9[index]);
+    if (Number.isInteger(index) && index >= 0 && index < images9.length) {
+      setCurrentIndex9(index);
+      setEnlargedImage9(images9[index]);
+    }
   };
 
   const handleCloseImage9 = () => {

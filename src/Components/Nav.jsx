@@ -40,7 +40,7 @@ const Nav = () => {
             alt="logo Ferdyan"
             width="600px"
             height="251px"
-            loading="eager"
+            loading="lazy"
           />
         </Link>
       </div>

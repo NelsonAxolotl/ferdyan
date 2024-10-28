@@ -39,13 +39,7 @@ const Home = () => {
 
             <div className="image-container">
               <Link to="/chantournage">
-                <img
-                  src={cerf}
-                  alt="cerf"
-                  width="600"
-                  height="400"
-                  loading="lazy"
-                />
+                <img src={cerf} alt="cerf" width="600" height="400" />
 
                 <div className="image-text">Chantournage</div>
               </Link>

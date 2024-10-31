@@ -498,12 +498,6 @@ const Chantournage = () => {
             je cherche à exprimer la puissance, la grâce et la beauté de la
             nature.
           </p>
-
-          <p>
-            Soucieuse de l’impacte sur l’environnement causée par la quantité de
-            carton jeté chaque jour, je recycle la matière pour l’emballage de
-            chacune des créations.
-          </p>
         </div>
         <div className="propos1">
           <p>Chaque pièce présentée sur cette page</p>
@@ -806,7 +800,7 @@ const Chantournage = () => {
               </div>
             )}
             <p>Corian</p>
-            <p>Diamètre 15 cm, hauteur 2,4 cm</p>
+            <p>Diamètre 15 cm, hauteur 2,4 cm, ép.5 mm</p>
             <p>Prix : 35€</p>
           </div>
         </div>
@@ -907,7 +901,7 @@ const Chantournage = () => {
               </div>
             )}
             <p>Chêne massif huilé</p>
-            <p>Diamètre 24 cm</p>
+            <p>Diamètre 24 cm, ép. : 2 cm</p>
             <p>Prix : 35€</p>
           </div>
         </div>
@@ -981,6 +975,13 @@ const Chantournage = () => {
               loading="lazy"
             />
           </div>
+        </div>
+        <div className="proposx">
+          <p>
+            Soucieuse de l’impacte sur l’environnement causée par la quantité de
+            carton jeté chaque jour, je recycle la matière pour l’emballage de
+            chacune des créations.
+          </p>
         </div>
       </div>
       {enlargedImage && (

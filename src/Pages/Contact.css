@@ -94,13 +94,13 @@
 .phone span {
   font-size: 1.3rem;
   font-weight: bold;
-  color: grey;
+  color: rgb(103, 101, 101);
 }
 
 .address p {
   font-size: 1.3rem;
   font-weight: bold;
-  color: grey;
+  color: rgb(103, 101, 101);
 }
 
 .phone i {
@@ -119,7 +119,7 @@
 .mail a {
   font-size: 1.3rem; /* Taille de la police */
   text-decoration: none; /* Pas de soulignement */
-  color: grey; /* Couleur du texte */
+  color: rgb(103, 101, 101); /* Couleur du texte */
   font-weight: bold; /* Poids de la police */
 }
 

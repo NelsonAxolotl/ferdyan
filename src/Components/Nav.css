@@ -135,7 +135,7 @@
     top: 0;
     right: -100vw;
     width: 100vw;
-    height: 100vh;
+
     padding: 2rem;
     background: whitesmoke;
     visibility: hidden;
@@ -250,5 +250,21 @@
 
   .navbar-item {
     text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 100vw;
+    height: 200vw;
+    padding: 2rem;
+    background: whitesmoke;
+    visibility: hidden;
+    transition: all 0.8s ease-out;
   }
 }

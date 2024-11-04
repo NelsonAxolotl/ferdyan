@@ -77,9 +77,9 @@ const Chantournage = () => {
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
   const updateEnlargedImage2 = (index) => {
-    if (Number.isInteger(index) && index >= 0 && index < images.length) {
+    if (Number.isInteger(index) && index >= 0 && index < images2.length) {
       setCurrentIndex2(index);
-      setEnlargedImage2(images[index]);
+      setEnlargedImage2(images2[index]);
     }
   };
 
@@ -91,13 +91,13 @@ const Chantournage = () => {
 
   // Navigue vers l'image suivante
   const handleNextImage2 = () => {
-    const nextIndex = (currentIndex2 + 1) % images.length;
+    const nextIndex = (currentIndex2 + 1) % images2.length;
     updateEnlargedImage2(nextIndex);
   };
 
   // Navigue vers l'image précédente
   const handlePrevImage2 = () => {
-    const prevIndex = (currentIndex2 - 1 + images.length) % images.length;
+    const prevIndex = (currentIndex2 - 1 + images2.length) % images2.length;
     updateEnlargedImage2(prevIndex);
   };
 
@@ -105,40 +105,31 @@ const Chantournage = () => {
   const [enlargedImage3, setEnlargedImage3] = useState(null);
   const [currentIndex3, setCurrentIndex3] = useState(0);
 
-  const handleImageClick3 = (index) => {
+  const updateEnlargedImage3 = (index) => {
     if (Number.isInteger(index) && index >= 0 && index < images3.length) {
       setCurrentIndex3(index);
       setEnlargedImage3(images3[index]);
     }
   };
 
-  const handleCloseImage3 = () => {
-    setEnlargedImage3(null);
-  };
+  // Gestion des clics
+  const handleImageClick3 = (index) => updateEnlargedImage3(index);
 
+  // Ferme l'image agrandie
+  const handleCloseImage3 = () => setEnlargedImage3(null);
+
+  // Navigue vers l'image suivante
   const handleNextImage3 = () => {
     const nextIndex = (currentIndex3 + 1) % images3.length;
-    if (
-      Number.isInteger(nextIndex) &&
-      nextIndex >= 0 &&
-      nextIndex < images3.length
-    ) {
-      setCurrentIndex3(nextIndex);
-      setEnlargedImage3(images3[nextIndex]);
-    }
+    updateEnlargedImage3(nextIndex);
   };
 
+  // Navigue vers l'image précédente
   const handlePrevImage3 = () => {
     const prevIndex = (currentIndex3 - 1 + images3.length) % images3.length;
-    if (
-      Number.isInteger(prevIndex) &&
-      prevIndex >= 0 &&
-      prevIndex < images3.length
-    ) {
-      setCurrentIndex3(prevIndex);
-      setEnlargedImage3(images3[prevIndex]);
-    }
+    updateEnlargedImage3(prevIndex);
   };
+
   const images4 = [loup3, loup4];
   const [enlargedImage4, setEnlargedImage4] = useState(null);
   const [currentIndex4, setCurrentIndex4] = useState(0);

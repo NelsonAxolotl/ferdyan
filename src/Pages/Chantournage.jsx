@@ -48,78 +48,59 @@ const Chantournage = () => {
   const [enlargedImage1, setEnlargedImage1] = useState(null);
   const [currentIndex1, setCurrentIndex1] = useState(0);
 
-  const handleImageClick1 = (index) => {
+  const updateEnlargedImage = (index) => {
     if (Number.isInteger(index) && index >= 0 && index < images.length) {
       setCurrentIndex1(index);
       setEnlargedImage1(images[index]);
     }
   };
 
-  const handleCloseImage1 = () => {
-    setEnlargedImage1(null);
-  };
+  // Gestion des clics
+  const handleImageClick1 = (index) => updateEnlargedImage(index);
 
+  // Ferme l'image agrandie
+  const handleCloseImage1 = () => setEnlargedImage1(null);
+
+  // Navigue vers l'image suivante
   const handleNextImage1 = () => {
     const nextIndex = (currentIndex1 + 1) % images.length;
-    if (
-      Number.isInteger(nextIndex) &&
-      nextIndex >= 0 &&
-      nextIndex < images.length
-    ) {
-      setCurrentIndex1(nextIndex);
-      setEnlargedImage1(images[nextIndex]);
-    }
+    updateEnlargedImage(nextIndex);
   };
 
+  // Navigue vers l'image précédente
   const handlePrevImage1 = () => {
     const prevIndex = (currentIndex1 - 1 + images.length) % images.length;
-    if (
-      Number.isInteger(prevIndex) &&
-      prevIndex >= 0 &&
-      prevIndex < images.length
-    ) {
-      setCurrentIndex1(prevIndex);
-      setEnlargedImage1(images[prevIndex]);
-    }
+    updateEnlargedImage(prevIndex);
   };
   const images2 = [cerf3, cerf4];
   const [enlargedImage2, setEnlargedImage2] = useState(null);
   const [currentIndex2, setCurrentIndex2] = useState(0);
 
-  const handleImageClick2 = (index) => {
-    if (Number.isInteger(index) && index >= 0 && index < images2.length) {
+  const updateEnlargedImage2 = (index) => {
+    if (Number.isInteger(index) && index >= 0 && index < images.length) {
       setCurrentIndex2(index);
-      setEnlargedImage2(images2[index]);
+      setEnlargedImage2(images[index]);
     }
   };
 
-  const handleCloseImage2 = () => {
-    setEnlargedImage2(null);
-  };
+  // Gestion des clics
+  const handleImageClick2 = (index) => updateEnlargedImage2(index);
 
+  // Ferme l'image agrandie
+  const handleCloseImage2 = () => setEnlargedImage2(null);
+
+  // Navigue vers l'image suivante
   const handleNextImage2 = () => {
-    const nextIndex = (currentIndex2 + 1) % images2.length;
-    if (
-      Number.isInteger(nextIndex) &&
-      nextIndex >= 0 &&
-      nextIndex < images2.length
-    ) {
-      setCurrentIndex2(nextIndex);
-      setEnlargedImage2(images2[nextIndex]);
-    }
+    const nextIndex = (currentIndex2 + 1) % images.length;
+    updateEnlargedImage2(nextIndex);
   };
 
+  // Navigue vers l'image précédente
   const handlePrevImage2 = () => {
-    const prevIndex = (currentIndex2 - 1 + images2.length) % images2.length;
-    if (
-      Number.isInteger(prevIndex) &&
-      prevIndex >= 0 &&
-      prevIndex < images2.length
-    ) {
-      setCurrentIndex2(prevIndex);
-      setEnlargedImage2(images2[prevIndex]);
-    }
+    const prevIndex = (currentIndex2 - 1 + images.length) % images.length;
+    updateEnlargedImage2(prevIndex);
   };
+
   const images3 = [loup1, loup2];
   const [enlargedImage3, setEnlargedImage3] = useState(null);
   const [currentIndex3, setCurrentIndex3] = useState(0);

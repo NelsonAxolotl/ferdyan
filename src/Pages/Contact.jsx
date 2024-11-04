@@ -47,8 +47,7 @@ const Contact = () => {
           <div className="icons">
             <div className="facebook">
               <a
-                href="https://www.facebook.com/share/6UYmdLdVgbVBgwvp/
-"
+                href="https://www.facebook.com/share/6UYmdLdVgbVBgwvp/"
                 aria-label="Emmanuelle Ferdyan"
                 title="Suivez-moi sur Facebook"
                 target="_blank"

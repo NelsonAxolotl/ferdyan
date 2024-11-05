@@ -377,6 +377,8 @@ const Chantournage = () => {
             <img
               src={jpj2}
               alt="jpj"
+              width="480px"
+              height="640px"
               onClick={() => handleImageClick(jpj2)}
               loading="lazy"
             />
@@ -385,6 +387,8 @@ const Chantournage = () => {
             <img
               src={jpj3}
               alt="jpj"
+              width="480px"
+              height="640px"
               onClick={() => handleImageClick(jpj3)}
               loading="lazy"
             />
@@ -393,6 +397,8 @@ const Chantournage = () => {
             <img
               src={jpj4}
               alt="jpj"
+              width="480px"
+              height="640px"
               onClick={() => handleImageClick(jpj4)}
               loading="lazy"
             />
@@ -440,6 +446,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`cerf${index + 1}`}
                 onClick={() => handleImageClick1(index)}
                 loading="lazy"
@@ -473,6 +481,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`cerf${index + 3}`} // Adjustez pour les cerfs 3 et 4
                 onClick={() => handleImageClick2(index)}
                 loading="lazy"
@@ -512,6 +522,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`loup${index + 1}`}
                 onClick={() => handleImageClick3(index)}
                 loading="lazy"
@@ -543,6 +555,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`loup${index + 3}`}
                 onClick={() => handleImageClick4(index)}
                 loading="lazy"
@@ -580,6 +594,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="436px"
+                height="633px"
                 alt={`taueau${index + 1}`}
                 onClick={() => handleImageClick5(index)}
                 loading="lazy"
@@ -630,6 +646,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`bougeoir${index + 1}`}
                 onClick={() => handleImageClick6(index)}
                 loading="lazy"
@@ -661,6 +679,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="450px"
+                height="600px"
                 alt={`bougeoir${index + 3}`}
                 onClick={() => handleImageClick7(index)}
                 loading="lazy"
@@ -694,6 +714,8 @@ const Chantournage = () => {
               <img
                 key={index}
                 src={img}
+                width="436px"
+                height="633px"
                 alt={`bougeoir${index + 1}`}
                 onClick={() => handleImageClick8(index)}
                 loading="lazy"
@@ -728,6 +750,8 @@ const Chantournage = () => {
             <img
               src={noel5}
               alt="noel"
+              width="436px"
+              height="633px"
               onClick={() => handleImageClick(noel5)}
               loading="lazy"
             />
@@ -741,6 +765,8 @@ const Chantournage = () => {
             <img
               src={noel6}
               alt="noel"
+              width="436px"
+              height="633px"
               onClick={() => handleImageClick(noel6)}
               loading="lazy"
             />
@@ -755,6 +781,8 @@ const Chantournage = () => {
             <img
               src={noel7}
               alt="noel"
+              width="436px"
+              height="633px"
               onClick={() => handleImageClick(noel7)}
               loading="lazy"
             />
@@ -768,6 +796,8 @@ const Chantournage = () => {
             <img
               src={noel8}
               alt="noel"
+              width="436px"
+              height="633px"
               onClick={() => handleImageClick(noel8)}
               loading="lazy"
             />
@@ -796,6 +826,8 @@ const Chantournage = () => {
                 key={index}
                 src={img}
                 alt={`bougeoir${index + 1}`}
+                width="436px"
+                height="633px"
                 onClick={() => handleImageClick9(index)}
                 loading="lazy"
               />

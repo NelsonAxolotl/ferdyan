@@ -397,8 +397,8 @@ const Chantournage = () => {
             <img
               src={jpj4}
               alt="jpj"
-              width="480px"
-              height="640px"
+              width="640px"
+              height="480px"
               onClick={() => handleImageClick(jpj4)}
               loading="lazy"
             />

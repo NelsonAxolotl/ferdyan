@@ -784,6 +784,7 @@
 
   .proposx p {
     margin: 20px;
+    font-size: 18px;
   }
 
   .items {
@@ -943,7 +944,7 @@
   }
 
   .propos1 p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .propos1 span {

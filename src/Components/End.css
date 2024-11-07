@@ -12,6 +12,7 @@
 .end p {
   font-size: 1.2rem;
   font-family: "Quicksand", sans-serif;
+  font-weight: 500;
 }
 
 .end a {
@@ -20,6 +21,7 @@
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   margin-left: 5px;
+  font-weight: 500;
 }
 
 .end span {

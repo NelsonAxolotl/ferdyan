@@ -206,6 +206,10 @@
     height: 300px;
   }
 
+  .propos4 {
+    font-size: 18px;
+  }
+
   @keyframes underlineGrow {
     0% {
       width: 0;

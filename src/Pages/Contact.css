@@ -36,6 +36,10 @@
   }
 }
 
+.resa {
+  padding-top: 15px;
+}
+
 .mail,
 .phone,
 .address {
@@ -50,7 +54,6 @@
 .mail i {
   font-size: 1.5rem;
   color: rgb(126, 58, 58);
-  margin-top: 10px;
 }
 
 .mail {
@@ -182,7 +185,7 @@
   }
 
   .mail i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .mail a {
@@ -190,7 +193,7 @@
   }
 
   .phone i {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .phone span {
@@ -198,7 +201,7 @@
   }
 
   .address p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   @keyframes underlineGrowContact {

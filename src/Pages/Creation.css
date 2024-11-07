@@ -225,6 +225,10 @@
     margin-bottom: 10px;
   }
 
+  .proposxx p {
+    font-size: 16px;
+  }
+
   @keyframes underlineGrow-crea {
     0% {
       width: 0;

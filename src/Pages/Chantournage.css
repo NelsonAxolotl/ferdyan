@@ -643,11 +643,11 @@
 }
 
 .prev-button {
-  left: 150px;
+  left: 300px;
 }
 
 .next-button {
-  right: 150px;
+  right: 300px;
 }
 
 .close-button {
@@ -784,7 +784,7 @@
 
   .proposx p {
     margin: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .items {
@@ -825,10 +825,12 @@
   }
   .prev-button {
     left: -10px;
+    font-size: 2rem;
   }
 
   .next-button {
     right: -10px;
+    font-size: 2rem;
   }
 }
 
@@ -944,7 +946,7 @@
   }
 
   .propos1 p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .propos1 span {

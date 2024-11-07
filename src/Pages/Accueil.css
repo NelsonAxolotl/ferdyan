@@ -206,8 +206,8 @@
     height: 300px;
   }
 
-  .propos4 {
-    font-size: 18px;
+  .propos4 p {
+    font-size: 16px;
   }
 
   @keyframes underlineGrow {

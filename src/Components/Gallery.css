@@ -6,6 +6,13 @@
   position: relative;
 }
 
+.gallery-container1 .slick-prev {
+  left: 150px !important; /* Proche du bord gauche */
+}
+
+.gallery-container1 .slick-next {
+  right: 150px !important; /* Proche du bord droit */
+}
 /* Style for gallery images */
 .gallery-image1 {
   width: auto; /* Full width of the container */
@@ -98,6 +105,14 @@
   .gallery-image1 {
     height: auto; /* Reduced height */
     width: 320px;
+  }
+
+  .gallery-container1 .slick-prev {
+    left: -20px !important; /* Proche du bord gauche */
+  }
+
+  .gallery-container1 .slick-next {
+    right: -20px !important; /* Proche du bord droit */
   }
 }
 

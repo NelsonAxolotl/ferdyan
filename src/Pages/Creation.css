@@ -87,7 +87,8 @@
   font-weight: 500;
   font-size: 1rem;
   line-height: 20px;
-  margin: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -108,6 +109,9 @@
   text-align: center;
 }
 
+.crea-text {
+  margin-bottom: 80px;
+}
 .pic-flex {
   display: flex;
   justify-content: space-between;

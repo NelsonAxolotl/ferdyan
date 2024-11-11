@@ -29,12 +29,9 @@ import jpj from "../Pics/jpj.webp";
 import jpj2 from "../Pics/jpj2.webp";
 import jpj3 from "../Pics/jpj3.webp";
 import jpj4 from "../Pics/jpj4.webp";
-import cerffab from "../Pics/cerffab.webp";
-import noelfab from "../Pics/noelfab.webp";
-import floconfab from "../Pics/floconfab.webp";
 import taureau1 from "../Pics/Taureau.webp";
 import taureau from "../Pics/taureau2.webp";
-import manupic from "../Pics/manupic.webp";
+
 const Chantournage = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
   const handleImageClick = (image) => {
@@ -418,7 +415,12 @@ const Chantournage = () => {
             sculptures murales qui incarnent la force et l’élégance. <br />A
             travers mes créations, telles que le cerf, le loup, le taureau...,
             je cherche à exprimer la puissance, la grâce et la beauté de la
-            nature.
+            nature. <br />
+            L’application de la teinte au brou de noix pour accentuer le relief
+            est une touche finale très esthétique ajoutant à la fois de la
+            chaleur et de la texture. <br />
+            Le vernis en quatre couches quant à lui, assure une protection tout
+            en rehaussant l’aspect visuel de mes sculptures murales.
           </p>
         </div>
         <div className="propos1">
@@ -738,7 +740,7 @@ const Chantournage = () => {
               </div>
             )}
             <p>Corian</p>
-            <p>Diamètre 15 cm, hauteur 2,4 cm, ép.5 mm</p>
+            <p>Diamètre 15 cm, hauteur 2,4 cm</p>
             <p>Prix : 35€</p>
           </div>
         </div>
@@ -816,6 +818,22 @@ const Chantournage = () => {
             <p>prix : 12€</p>
           </div>
         </div>
+        <div className="proposx">
+          <p>
+            Les suspensions « Cerf » et « boules pailletées » peuvent accueillir
+            des photos de moments inoubliables en famille ou entre amis et créer
+            des souvenirs précieux. <br />
+            Elles peuvent aussi devenir une tradition familiale en ajoutant
+            chaque année de nouvelles photos. <br />
+            Elles feront d’excellents cadeaux pour quelqu’un de spécial. Facile
+            d’utilisation, il suffit de retirer le fond du cadre pour placer la
+            photo d’identité. <br />
+            Pour les plus grands formats, vous pouvez utiliser le fond comme
+            gabarit et découper votre photo. <br />
+            Se sont des produits faits main et artisanaux conçus avec des
+            matériaux de qualité.
+          </p>
+        </div>
         <div className="items6">
           <h3>Dessous de plat</h3>
         </div>
@@ -853,8 +871,17 @@ const Chantournage = () => {
             <p>Prix : 35€</p>
           </div>
         </div>
+        <div className="proposx">
+          <p>
+            Les formes du flocon de neige apporteront une touche originale et
+            esthétique à votre table, tout en évoquant la saison hivernale.{" "}
+            <br />
+            La finition huilée est plus agréable au toucher et apporte au bois
+            une belle patine dans le temps.
+          </p>
+        </div>
         <div className="items5">
-          <h3>Repose couteau</h3>
+          <h3>Repose-couteau</h3>
         </div>
         <div className="pic-itemfab">
           <div className="image-item">
@@ -892,43 +919,25 @@ const Chantournage = () => {
             </div>
           </div>
         </div>
-        <div className="items8">
-          <h3>Etapes de fabrication</h3>
+        <div className="proposx">
+          <p>
+            L’assemblage du vieux chêne et du Corian combine à la fois des
+            éléments naturels et modernes. <br />
+            Facile d’entretien, il suffira de passer un coup d’éponge humide et
+            d’essuyer avec un chiffon
+          </p>
         </div>
-        <div className="pic-itemfab">
-          <div className="image-itemfab">
-            <img
-              src={manupic}
-              alt="artiste"
-              onClick={() => handleImageClick(manupic)}
-              loading="lazy"
-            />
-            <img
-              src={cerffab}
-              alt="cerffab"
-              onClick={() => handleImageClick(cerffab)}
-              loading="lazy"
-            />
-            <img
-              src={noelfab}
-              alt="noelfab"
-              onClick={() => handleImageClick(noelfab)}
-              loading="lazy"
-            />
-
-            <img
-              src={floconfab}
-              alt="floconfab"
-              onClick={() => handleImageClick(floconfab)}
-              loading="lazy"
-            />
-          </div>
+        <div className="items9">
+          <h3>Politique de livraison</h3>
         </div>
         <div className="proposx">
           <p>
-            Soucieuse de l’impacte sur l’environnement causée par la quantité de
-            carton jeté chaque jour, je recycle la matière pour l’emballage de
-            chacune des créations.
+            Pour tout achat, vous avez le choix entre une remise en main propre
+            sur la presqu’île de Lyon ou un envoi en Colis suivi (frais de port
+            à votre charge). <br />
+            L’emballage de chacune des créations provient de carton recyclé que
+            je découpe sur mesure et renforce avec soins pour assurer une
+            protection optimale.
           </p>
         </div>
       </div>

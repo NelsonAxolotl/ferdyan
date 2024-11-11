@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Creation.css";
-import escaliers from "../Pics/escaliers.png";
-import escaliers2 from "../Pics/escaliers2.png";
+import escaliers from "../Pics/escaliers.webp";
+import escaliers2 from "../Pics/escaliers2.webp";
 import escaliers3 from "../Pics/escaliers3.webp";
 import escaliers4 from "../Pics/escaliers4.webp";
 import biblidraw from "../Pics/biblidraw.webp";
@@ -28,7 +28,34 @@ const Creation = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+  const images = [escaliers3, escaliers4, biblidraw];
+  const [enlargedImage1, setEnlargedImage1] = useState(null);
+  const [currentIndex1, setCurrentIndex1] = useState(0);
 
+  const updateEnlargedImage = (index) => {
+    if (Number.isInteger(index) && index >= 0 && index < images.length) {
+      setCurrentIndex1(index);
+      setEnlargedImage1(images[index]);
+    }
+  };
+
+  // Gestion des clics
+  const handleImageClick1 = (index) => updateEnlargedImage(index);
+
+  // Ferme l'image agrandie
+  const handleCloseImage1 = () => setEnlargedImage1(null);
+
+  // Navigue vers l'image suivante
+  const handleNextImage1 = () => {
+    const nextIndex = (currentIndex1 + 1) % images.length;
+    updateEnlargedImage(nextIndex);
+  };
+
+  // Navigue vers l'image précédente
+  const handlePrevImage1 = () => {
+    const prevIndex = (currentIndex1 - 1 + images.length) % images.length;
+    updateEnlargedImage(prevIndex);
+  };
   return (
     <>
       <div className="creation">

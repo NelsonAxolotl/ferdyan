@@ -15,7 +15,34 @@ const Fixe = () => {
   const handleCloseImage = () => {
     setEnlargedImage(null);
   };
+  const images = [commode2, commode1];
+  const [enlargedImage1, setEnlargedImage1] = useState(null);
+  const [currentIndex1, setCurrentIndex1] = useState(0);
 
+  const updateEnlargedImage = (index) => {
+    if (Number.isInteger(index) && index >= 0 && index < images.length) {
+      setCurrentIndex1(index);
+      setEnlargedImage1(images[index]);
+    }
+  };
+
+  // Gestion des clics
+  const handleImageClick1 = (index) => updateEnlargedImage(index);
+
+  // Ferme l'image agrandie
+  const handleCloseImage1 = () => setEnlargedImage1(null);
+
+  // Navigue vers l'image suivante
+  const handleNextImage1 = () => {
+    const nextIndex = (currentIndex1 + 1) % images.length;
+    updateEnlargedImage(nextIndex);
+  };
+
+  // Navigue vers l'image précédente
+  const handlePrevImage1 = () => {
+    const prevIndex = (currentIndex1 - 1 + images.length) % images.length;
+    updateEnlargedImage(prevIndex);
+  };
   return (
     <>
       <div className="fix">
@@ -36,23 +63,34 @@ const Fixe = () => {
         </div>
         <div className="pic-item8">
           <div className="image-item">
-            <img
-              src={commode2}
-              alt="commode"
-              onClick={() => handleImageClick(commode2)}
-              width="400px"
-              height="260px"
-              loading="lazy"
-            />
-            <img
-              src={commode1}
-              alt="commode"
-              onClick={() => handleImageClick(commode1)}
-              width="480px"
-              height="640px"
-              loading="lazy"
-            />
+            {images.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                width="450px"
+                height="600px"
+                alt={`commode${index + 1}`}
+                onClick={() => handleImageClick1(index)}
+                loading="lazy"
+              />
+            ))}
 
+            {enlargedImage1 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage1}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage1} alt="Enlarged cerf" />
+                  <button className="next-button" onClick={handleNextImage1}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage1}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="image-item5">
               <img
                 src={coffre}

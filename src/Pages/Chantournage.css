@@ -230,7 +230,7 @@
 .items h3 {
   font-size: 1.8rem;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 80px;
   color: rgb(126, 58, 58);
   font-weight: 500;
 }
@@ -307,7 +307,7 @@
 
 .items5 h3 {
   font-size: 1.8rem;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 50px;
   color: rgb(126, 58, 58);
   font-weight: 500;
@@ -321,7 +321,8 @@
 
 .items6 h3 {
   font-size: 1.8rem;
-  margin: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px;
   color: rgb(126, 58, 58);
   font-weight: 500;
 }
@@ -335,7 +336,7 @@
 
 .items7 h3 {
   font-size: 1.8rem;
-  margin-top: 60px;
+  margin-top: 80px;
   color: rgb(126, 58, 58);
   font-weight: 500;
   text-decoration: underline;
@@ -343,7 +344,7 @@
 }
 
 .items7 h4 {
-  margin-top: 60px;
+  margin-top: 80px;
   font-size: 1.8rem;
   color: rgb(126, 58, 58);
   font-weight: 500;
@@ -364,6 +365,16 @@
   font-weight: 500;
 }
 
+.items9 h3 {
+  font-size: 1.8rem;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  color: rgb(126, 58, 58);
+  font-weight: 500;
+  border: 2px solid rgb(126, 58, 58);
+  border-radius: 5px;
+  padding: 10px;
+}
 .marks p {
   color: black;
   font-weight: 500;
@@ -643,11 +654,11 @@
 }
 
 .prev-button {
-  left: 300px;
+  left: 150px;
 }
 
 .next-button {
-  right: 300px;
+  right: 150px;
 }
 
 .close-button {
@@ -779,6 +790,7 @@
 
   .gallerie h2 {
     margin-top: 30px;
+    margin-bottom: 40px;
     font-size: 1.8rem;
   }
 
@@ -788,7 +800,7 @@
   }
 
   .items {
-    margin-top: -20px;
+    margin-top: 20px;
   }
 
   .propos1 {
@@ -825,7 +837,7 @@
   }
   .prev-button {
     left: -10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .next-button {
@@ -901,7 +913,8 @@
   }
 
   .items6 h3 {
-    margin: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 
   .items7 {
@@ -911,7 +924,7 @@
   }
 
   .items7 h3 {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 40px;
     text-decoration: none;
   }
@@ -924,6 +937,11 @@
   .items8 h3 {
     margin-bottom: 30px;
     margin-top: 20px;
+  }
+
+  .items9 h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   .pic-itemfab {

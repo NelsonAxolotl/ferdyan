@@ -118,23 +118,22 @@ const Creation = () => {
             </div>
             <div className="image-item6">
               <img
-                src={escaliers}
-                alt="escaliers"
+                src={boutique2}
+                alt="boutique"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(escaliers)}
+                onClick={() => handleImageClick(boutique2)}
                 loading="lazy"
               />
               <img
-                src={escaliers2}
-                alt="escaliers"
+                src={boutique}
+                alt="boutique"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(escaliers2)}
+                onClick={() => handleImageClick(boutique)}
                 loading="lazy"
               />
-
-              <p>Escaliers à pas japonnais, rangements intégrés</p>
+              <p>Devanture boutique en lettrage peint</p>
             </div>
           </div>
           <div className="image-item6">
@@ -166,84 +165,85 @@ const Creation = () => {
             </div>
             <div className="image-item6">
               <img
-                src={boutique2}
-                alt="boutique"
+                src={escaliers}
+                alt="escaliers"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(boutique2)}
+                onClick={() => handleImageClick(escaliers)}
                 loading="lazy"
               />
               <img
-                src={boutique}
-                alt="boutique"
+                src={escaliers2}
+                alt="escaliers"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(boutique)}
+                onClick={() => handleImageClick(escaliers2)}
                 loading="lazy"
               />
-              <p>Devanture boutique en lettrage peint</p>
+
+              <p>Escaliers à pas japonnais, rangements intégrés</p>
             </div>
           </div>
         </div>
         <div className="crea-titre">
           <h2>Avant / Après</h2>
         </div>
+
         <div className="pic-flex">
-          <div className="pic-item10">
+          <div className="image-item6">
+            <img
+              src={reno1}
+              alt="renovation salle bain"
+              width="200px"
+              height="280px"
+              onClick={() => handleImageClick(reno1)}
+              loading="lazy"
+            />
+            <img
+              src={reno2}
+              alt="renovation salle de bain"
+              width="200px"
+              height="280px"
+              onClick={() => handleImageClick(reno2)}
+              loading="lazy"
+            />
+
             <div className="image-item6">
               <img
-                src={reno1}
-                alt="renovation salle bain"
+                src={reno5}
+                alt="renovation cuisine"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(reno1)}
+                onClick={() => handleImageClick(reno5)}
                 loading="lazy"
               />
               <img
-                src={reno2}
-                alt="renovation salle de bain"
+                src={reno6}
+                alt="renovation cuisine"
                 width="200px"
                 height="280px"
-                onClick={() => handleImageClick(reno2)}
-                loading="lazy"
-              />
-              <div className="image-item6">
-                <img
-                  src={reno5}
-                  alt="renovation cuisine"
-                  width="200px"
-                  height="280px"
-                  onClick={() => handleImageClick(reno5)}
-                  loading="lazy"
-                />
-                <img
-                  src={reno6}
-                  alt="renovation cuisine"
-                  width="200px"
-                  height="280px"
-                  onClick={() => handleImageClick(reno6)}
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <div className="image-item6 right-images">
-              <img
-                src={reno4}
-                alt="renovation salle de bain"
-                width="200px"
-                height="280px"
-                onClick={() => handleImageClick(reno4)}
-                loading="lazy"
-              />
-              <img
-                src={reno3}
-                alt="renovation salle de bain"
-                width="200px"
-                height="280px"
-                onClick={() => handleImageClick(reno3)}
+                onClick={() => handleImageClick(reno6)}
                 loading="lazy"
               />
             </div>
+          </div>
+          <div className="image-item6 right-images">
+            <img
+              src={reno4}
+              alt="renovation salle de bain"
+              width="200px"
+              height="280px"
+              onClick={() => handleImageClick(reno4)}
+              loading="lazy"
+            />
+            <img
+              src={reno3}
+              alt="renovation salle de bain"
+              width="200px"
+              height="280px"
+              onClick={() => handleImageClick(reno3)}
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

@@ -83,6 +83,7 @@
     width: 22%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
+
 .propos {
   margin: 20px;
 }
@@ -550,6 +551,7 @@
 .pic-item4 img:hover {
   transform: scale(1.03);
 }
+
 .pic-item8 {
   display: flex;
   gap: 60px; /* Espace entre les images */
@@ -673,6 +675,24 @@
 
   .fix h1 {
     margin-top: 50px;
+  }
+
+  @keyframes underlineGrow-char {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+
+  @keyframes underlineGrow-fixe {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 25%;
+    }
   }
 }
 

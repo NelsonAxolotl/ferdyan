@@ -170,6 +170,19 @@
   .contact h1 {
     margin-top: 60px;
   }
+
+  @keyframes underlineGrowContact {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 20%; /* Augmente légèrement la largeur pour petits écrans */
+    }
+  }
+
+  .underline-contact {
+    animation: underlineGrowContact 1.5s ease-out forwards;
+  }
 }
 
 @media screen and (max-width: 1042px) {
@@ -212,6 +225,10 @@
       width: 30%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
   }
+
+  .underline-contact {
+    animation: underlineGrowContact 1.5s ease-out forwards;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -222,5 +239,9 @@
     100% {
       width: 45%; /* La ligne grandit jusqu'à 100% de sa taille */
     }
+  }
+
+  .underline-contact {
+    animation: underlineGrowContact 1.5s ease-out forwards;
   }
 }

@@ -24,7 +24,7 @@ const Home = () => {
                   alt="escalier"
                   width="600"
                   height="400"
-                  loading="eager"
+                  loading="lazy"
                 />
                 <div className="image-text">Création sur mesure</div>
               </Link>

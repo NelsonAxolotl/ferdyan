@@ -814,7 +814,7 @@ const Chantournage = () => {
               <br />
             </span>
 
-            <p>Diamètre 11 cm</p>
+            <p>Diamètre 11 cm, ep 5 mm</p>
             <p>prix : 12€</p>
           </div>
         </div>
@@ -930,7 +930,7 @@ const Chantournage = () => {
         <div className="items9">
           <h3>Politique de livraison</h3>
         </div>
-        <div className="proposx">
+        <div className="propos1">
           <p>
             Pour tout achat, vous avez le choix entre une remise en main propre
             sur la presqu’île de Lyon ou un envoi en Colis suivi (frais de port

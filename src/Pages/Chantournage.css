@@ -369,7 +369,7 @@
 .items9 h3 {
   font-size: 1.8rem;
   margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: -20px;
   color: rgb(126, 58, 58);
   font-weight: 500;
   border: 2px solid rgb(126, 58, 58);

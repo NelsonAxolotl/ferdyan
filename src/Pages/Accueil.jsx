@@ -55,7 +55,11 @@ const Accueil = () => {
               Plus tard, je teste mon activité de conception et fabrication de
               meubles sur mesure au sein d’une couveuse d’entreprises, et anime
               en parallèle des ateliers de dessin pour le public{" "}
-              <Link to="https://artagora.fr/">
+              <Link
+                to="https://artagora.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>d’ARTAGORA</span>
               </Link>{" "}
               , en collaboration avec <span>Damien Capelazzi</span>, historien

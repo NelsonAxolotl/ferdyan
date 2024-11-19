@@ -370,7 +370,7 @@
 .items9 h3 {
   font-size: 1.8rem;
   margin-top: 100px;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
   color: rgb(126, 58, 58);
   font-weight: 500;
   border: 2px solid rgb(126, 58, 58);
@@ -403,7 +403,7 @@
 }
 
 .pic-item img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .image-item {
@@ -486,7 +486,7 @@
 }
 
 .pic-item1 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .pic-item2 {
@@ -507,7 +507,7 @@
 }
 
 .pic-item2 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .pic-item3 {
@@ -528,7 +528,7 @@
 }
 
 .pic-item3 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .pic-item4 {
@@ -550,7 +550,7 @@
 }
 
 .pic-item4 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .pic-item8 {
@@ -572,7 +572,7 @@
 }
 
 .pic-item8 img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .pic-itemfab {
@@ -593,7 +593,7 @@
 }
 
 .pic-itemfab img:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .image-itemfab {

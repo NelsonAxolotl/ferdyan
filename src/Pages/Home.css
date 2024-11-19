@@ -40,13 +40,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  width: 100%;
+  width: 80%;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
+  border-radius: 2px;
+}
+
+.image-container:first-child .image-text {
+  display: inline-block; /* Ajuste la largeur de l'arrière-plan au texte */
+  width: 76%;
+}
+
+.image-container:last-child .image-text {
+  display: inline-block; /* Ajuste la largeur de l'arrière-plan au texte */
+  width: 55%;
 }
 
 @media screen and (max-width: 1300px) {

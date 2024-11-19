@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 import commode from "../Pics/commode1.webp";
 import escalier from "../Pics/escaliers3.webp";
 import cerf from "../Pics/cerf1.webp";
-import coffre from "../Pics/coffre.webp";
 
 const Home = () => {
   const [fadeIn, setFadeIn] = useState(false);

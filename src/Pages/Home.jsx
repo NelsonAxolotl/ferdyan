@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
+import commode from "../Pics/commode1.webp";
 import escalier from "../Pics/escaliers3.webp";
 import cerf from "../Pics/cerf1.webp";
 import coffre from "../Pics/coffre.webp";
@@ -33,8 +36,8 @@ const Home = () => {
             <div className="image-container">
               <Link to="/reparation">
                 <img
-                  src={coffre}
-                  alt="coffres"
+                  src={commode}
+                  alt="commode"
                   width="600"
                   height="400"
                   loading="lazy"
@@ -68,6 +71,30 @@ const Home = () => {
               Également artisan chantourneur sur bois, je crée des sculptures
               murales et objets de décoration.
             </p>
+          </div>
+          <div className="icons">
+            <div className="facebook">
+              <a
+                href="https://www.facebook.com/share/6UYmdLdVgbVBgwvp/"
+                aria-label="Emmanuelle Ferdyan"
+                title="Suivez-moi sur Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+            <div className="insta">
+              <a
+                href="https://www.instagram.com/emmanuelle_ferdyan/profilecard/?igsh=MXZiZ3dvM29zajVidQ=="
+                aria-label="Emmanuelle ferdyan"
+                title="Suivez-moi sur Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

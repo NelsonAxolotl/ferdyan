@@ -54,7 +54,7 @@
   }
 
   100% {
-    width: 18%; /* La ligne grandit jusqu'à 100% de sa taille */
+    width: 10%; /* La ligne grandit jusqu'à 100% de sa taille */
   }
 }
 

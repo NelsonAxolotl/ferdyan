@@ -17,7 +17,7 @@ const Accueil = () => {
   return (
     <>
       <div className="main">
-        <h1 className="slide-in">Parcours</h1>
+        <h1 className="slide-in">Bio</h1>
         <div className="underline"></div>
 
         <div className="picma">

@@ -58,7 +58,7 @@
 .pic-item10 {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: -20px;
   margin-left: 60px;
   gap: 50px;
 }
@@ -101,7 +101,7 @@
 }
 
 .crea-titre h2 {
-  margin-top: -20px;
+  margin-top: -30px;
   margin-bottom: -20px;
   font-family: "quicksand", cursive;
   font-size: 2rem;

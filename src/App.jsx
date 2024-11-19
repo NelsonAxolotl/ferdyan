@@ -48,7 +48,7 @@ function App() {
             <Route path="/creation-sur-mesure" element={<Creation />} />
             <Route path="/reparation" element={<Fixe />} />
             <Route path="/chantournage" element={<Chantournage />} />
-            <Route path="/parcours" element={<Accueil />} />
+            <Route path="/bio" element={<Accueil />} />
             <Route path="/dessins" element={<Dessin />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

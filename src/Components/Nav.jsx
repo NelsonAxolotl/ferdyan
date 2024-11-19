@@ -56,8 +56,8 @@ const Nav = () => {
             className: "slideInDown-3",
           },
           {
-            path: "/parcours",
-            label: "Parcours",
+            path: "/bio",
+            label: "Bio",
             className: "slideInDown-4",
           },
           { path: "/dessins", label: "Dessins", className: "slideInDown-5" },

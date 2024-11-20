@@ -320,19 +320,15 @@ const Chantournage = () => {
         <div className="proposx">
           <p>
             Mon intérêt pour le chantournage a pris racine après avoir découvert
-            un documentaire sur l&#39;histoire de{" "}
+            un documentaire sur le destin de{" "}
             <Link
               to="https://fr.wikipedia.org/wiki/Joseph_Paul_Jernigan"
               target="_blank"
             >
               <span>Joseph Paul Jernigan</span>
             </Link>
-            , un prisonnier américain exécuté en 1993. <br />
-            Avant sa mort, il avait accepté de léguer son corps à la science.{" "}
-            <br />
-            Son cadavre a été congelé, puis découpé en 1 871 tranches de 1 mm
-            d’épaisseur, de la tête aux pieds, dans le cadre du projet
-            scientifique{" "}
+            , un condamné américain exécuté, tranché puis numérisé, dans le
+            cadre du projet scientifique
             <Link
               to="https://fr.wikipedia.org/wiki/Visible_Human_Project"
               target="_blank"
@@ -340,25 +336,17 @@ const Chantournage = () => {
               <span>« Visible Human Project »</span>
             </Link>
             . <br />
-            Cet événement a profondément modifié ma perception du corps humain
-            et du volume.
-          </p>
-          <p>
-            Fascinée par le rendu numérique des images, j’ai réalisé un dessin
-            des contours de son visage, rappelant des cartes topographiques.{" "}
+            Cette nouvelle vue tridimensionnelle du corps humain m’a fascinée.
             <br />
-            Le folioscope « Head 2 heads », qui présente des coupes
-            transversales de la tête, m’a inspirée à reconstituer le haut du
-            corps de Joseph Paul Jernigan en strates. <br />
+            Le contour de ces coupes anatomiques m’ont permit de réaliser un
+            dessin de son visage, telle une cartographie des courbes de niveau
+            et de reconstituer son buste en strates. <br />
             Pour y parvenir, le seul outil me permettant d’effectuer des
-            découpes précises, sinueuses et minutieuses est la scie à
+            découpes précises, sinueuses et minutieuses était la scie à
             chantourner.
           </p>
         </div>
-        <div className="items7">
-          <h3>Travail sur </h3>
-          <h4>joseph Paul Jernigan</h4>
-        </div>
+
         <div className="pic-item2">
           <div className="image-item">
             <img

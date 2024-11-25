@@ -69,6 +69,16 @@ const Home = () => {
               murales et objets de décoration.
             </p>
           </div>
+          <div className="icon-text">
+            <div className="proposxxx">
+              <p>"Pour découvrir mes dernières créations </p>
+              <span>et suivre mon actualité,</span>{" "}
+            </div>
+            <div className="proposxxx">
+              <p>n'hésitez pas à me rejoindre sur les </p>{" "}
+              <span>réseaux sociaux."</span>
+            </div>
+          </div>
           <div className="icons">
             <div className="facebook">
               <a

@@ -630,8 +630,8 @@ const Chantournage = () => {
               <p>Contreplaqué, brou de noix,</p>
               <p> vernis aquarétane</p>
             </div>
-            <p>Dimensions : L 48 x l 58 x p 6 cm</p>
-            <p>Prix : 250€</p>
+            <p>Dimensions : L 56 x l 42 x p 6,5 cm</p>
+            <p>Prix : 360€</p>
           </div>
         </div>
         <div className="proposx">

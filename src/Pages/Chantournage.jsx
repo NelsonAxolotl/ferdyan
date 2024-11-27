@@ -338,9 +338,9 @@ const Chantournage = () => {
             . <br />
             Cette nouvelle vue tridimensionnelle du corps humain m’a fascinée.
             <br />
-            Le contour de ces coupes anatomiques m’ont permit de réaliser un
+            Le contour de ces coupes frontales m’ont permit de réaliser un
             dessin de son visage, telle une cartographie des courbes de niveau
-            et de reconstituer son buste en strates. <br />
+            et de reconstituer son buste en volume. <br />
             Pour y parvenir, le seul outil me permettant d’effectuer des
             découpes précises, sinueuses et minutieuses était la scie à
             chantourner.
@@ -393,9 +393,9 @@ const Chantournage = () => {
           <p>
             Ma démarche artistique s’est développée pour devenir une exploration
             personnelle du règne animal. <br />
-            En m’appuyant sur le même principe de strates mais sans pour autant
-            reconstituer tout son volume, je conçois des têtes d’animaux aux
-            lignes épurées.
+            En m’appuyant sur le même principe de coupes frontales mais sans
+            pour autant reconstituer tout le relief, je conçois des têtes
+            d’animaux aux lignes épurées.
           </p>
           <p>
             Le bois contreplaqué que je récupère dans différents chantiers,

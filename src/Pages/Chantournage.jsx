@@ -612,10 +612,11 @@ const Chantournage = () => {
             <p>Prix : 250€</p>
           </div>
         </div>
-        <div className="items3">
-          <h3>Le Lion</h3>
-        </div>
+
         <div className="lion">
+          <div className="items3">
+            <h3>Le Lion</h3>
+          </div>
           <video autoPlay muted loop className="background-video">
             <source src={lion} type="video/mp4" />
             Votre navigateur ne prend pas en charge les vidéos.
@@ -624,6 +625,14 @@ const Chantournage = () => {
             <source src={lion2} type="video/mp4" />
             Votre navigateur ne prend pas en charge les vidéos.
           </video>
+          <div className="image-item">
+            <div className="cerf-text">
+              <p>Contreplaqué, brou de noix,</p>
+              <p> vernis aquarétane</p>
+            </div>
+            <p>Dimensions : L 48 x l 58 x p 6 cm</p>
+            <p>Prix : 250€</p>
+          </div>
         </div>
         <div className="proposx">
           <p>

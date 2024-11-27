@@ -31,6 +31,8 @@ import jpj3 from "../Pics/jpj3.webp";
 import jpj4 from "../Pics/jpj4.webp";
 import taureau1 from "../Pics/Taureau.webp";
 import taureau from "../Pics/taureau2.webp";
+import lion from "../Vidéos/lion.mp4";
+import lion2 from "../Vidéos/lion2.mp4";
 
 const Chantournage = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
@@ -346,7 +348,6 @@ const Chantournage = () => {
             chantourner.
           </p>
         </div>
-
         <div className="pic-item2">
           <div className="image-item">
             <img
@@ -421,15 +422,12 @@ const Chantournage = () => {
             </span>
           </div>
         </div>
-
         <div className="gallerie">
           <h2>Galerie</h2>
         </div>
-
         <div className="items2">
           <h3>Le Cerf</h3>
         </div>
-
         <div className="pic-item">
           <div className="image-item">
             {images.map((img, index) => (
@@ -577,7 +575,6 @@ const Chantournage = () => {
         <div className="items3">
           <h3>Le Taureau</h3>
         </div>
-
         <div className="pic-item4">
           <div className="image-item">
             {images5.map((img, index) => (
@@ -615,6 +612,19 @@ const Chantournage = () => {
             <p>Prix : 250€</p>
           </div>
         </div>
+        <div className="items3">
+          <h3>Le Lion</h3>
+        </div>
+        <div className="lion">
+          <video autoPlay muted loop className="background-video">
+            <source src={lion} type="video/mp4" />
+            Votre navigateur ne prend pas en charge les vidéos.
+          </video>
+          <video autoPlay muted loop className="background-video">
+            <source src={lion2} type="video/mp4" />
+            Votre navigateur ne prend pas en charge les vidéos.
+          </video>
+        </div>
         <div className="proposx">
           <p>
             Autodidacte, j’ai perfectionné ma technique de chantournage,
@@ -626,7 +636,6 @@ const Chantournage = () => {
             objets décoratifs évoquant l&#39;esprit montagnard.
           </p>
         </div>
-
         <div className="items">
           <h3>Bougeoirs</h3>
         </div>
@@ -697,7 +706,6 @@ const Chantournage = () => {
             <p>Prix : 35€</p>
           </div>
         </div>
-
         <div className="pic-item4">
           <div className="image-item">
             {images8.map((img, index) => (

@@ -35,17 +35,6 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    const disableContextMenu = (event) => {
-      event.preventDefault();
-    };
-    document.addEventListener("contextmenu", disableContextMenu);
-
-    return () => {
-      document.removeEventListener("contextmenu", disableContextMenu);
-    };
-  }, []);
-
   return (
     <Router>
       {showIntro ? (

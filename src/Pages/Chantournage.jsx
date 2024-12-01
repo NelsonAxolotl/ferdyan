@@ -617,11 +617,23 @@ const Chantournage = () => {
           <div className="items3">
             <h3>Le Lion</h3>
           </div>
-          <video autoPlay muted loop className="background-video">
+          <video
+            autoPlay
+            muted
+            loop
+            className="background-video"
+            onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
+          >
             <source src={lion} type="video/mp4" />
             Votre navigateur ne prend pas en charge les vidéos.
           </video>
-          <video autoPlay muted loop className="background-video">
+          <video
+            autoPlay
+            muted
+            loop
+            className="background-video"
+            onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
+          >
             <source src={lion2} type="video/mp4" />
             Votre navigateur ne prend pas en charge les vidéos.
           </video>

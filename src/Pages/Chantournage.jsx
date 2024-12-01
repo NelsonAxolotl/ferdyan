@@ -402,9 +402,9 @@ const Chantournage = () => {
             Le bois contreplaqué que je récupère dans différents chantiers,
             devient sous mes mains des matériaux vivants, transformés en
             sculptures murales qui incarnent la force et l’élégance. <br />A
-            travers mes créations, telles que le cerf, le loup, le taureau...,
-            je cherche à exprimer la puissance, la grâce et la beauté de la
-            nature. <br />
+            travers mes créations, telles que le cerf, le loup, le taureau, le
+            lion..., je cherche à exprimer la puissance, la grâce et la beauté
+            de la nature. <br />
             L’application de la teinte au brou de noix pour accentuer le relief
             est une touche finale très esthétique ajoutant à la fois de la
             chaleur et de la texture. <br />
@@ -938,7 +938,7 @@ const Chantournage = () => {
         <div className="propos1">
           <p>
             Pour tout achat, vous avez le choix entre une remise en main propre
-            sur la presqu’île de Lyon ou un envoi en Colis suivi (frais de port
+            sur la presqu’île de Lyon ou un envoi en colis suivi (frais de port
             à votre charge). <br />
             L’emballage de chacune des créations provient de carton recyclé que
             je découpe sur mesure et renforce avec soins pour assurer une

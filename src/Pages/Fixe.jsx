@@ -57,8 +57,9 @@ const Fixe = () => {
             ce pourquoi mon expertise s’étend également à la restauration de vos
             meubles auxquels vous êtes attachés pour leur faire peau neuve, ou
             les transformer pour les revaloriser en y apportant une touche
-            contemporaine. Pour se faire, je m’engage à utiliser des matériaux
-            de qualité pour allier durabilité et esthétisme.
+            contemporaine. <br />
+            Pour se faire, je m’engage à utiliser des matériaux de qualité pour
+            allier durabilité et esthétisme.
           </p>
         </div>
         <div className="pic-item8">

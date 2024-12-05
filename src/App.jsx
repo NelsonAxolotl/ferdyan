@@ -34,6 +34,19 @@ function App() {
       window.removeEventListener("popstate", handleNavigation);
     };
   }, []);
+  useEffect(() => {
+    const disableContextMenu = (event) => {
+      if (event.target.tagName === "IMG") {
+        event.preventDefault();
+      }
+    };
+
+    document.addEventListener("contextmenu", disableContextMenu);
+
+    return () => {
+      document.removeEventListener("contextmenu", disableContextMenu);
+    };
+  }, []);
 
   return (
     <Router>

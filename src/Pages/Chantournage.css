@@ -686,7 +686,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
   margin-bottom: 50px;
 }
 
@@ -697,7 +697,7 @@
 
 .background-video {
   width: 100%; /* Ajuste selon vos besoins, par exemple 50% */
-  max-width: 200px; /* Taille maximale pour limiter l'élargissement */
+  max-width: 250px; /* Taille maximale pour limiter l'élargissement */
   height: auto; /* Maintient le ratio d'aspect */
   border-radius: 5px; /* Optionnel : ajoute un effet de coin arrondi */
   object-fit: cover; /* Assure le bon ajustement dans le conteneur */
@@ -709,6 +709,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  margin: 40px 0 -30px;
 }
 
 .lion-image img {
@@ -830,6 +831,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0;
+    margin-bottom: 80px;
   }
 
   .videos {
@@ -845,7 +847,7 @@
   .lion-image img {
     width: 300px;
     height: auto;
-    margin: 40px 0 -40px;
+    margin: 0 0 -40px;
   }
 }
 

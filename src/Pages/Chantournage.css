@@ -411,11 +411,24 @@
   text-align: center; /* Ensures the text below the image is centered */
 }
 
+.image-item20 {
+  object-fit: cover;
+  text-align: center; /* Ensures the text below the image is centered */
+}
+
 .image-itemfab img:first-of-type {
   object-position: top; /* Assure que le haut de l'image est visible */
 }
 
 .image-item p {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.image-item20 p {
   color: black;
   font-weight: 500;
   font-size: 1rem;
@@ -669,19 +682,44 @@
   right: 20px;
 }
 
-.lion {
-  margin-bottom: 40px;
-  margin-top: 10px;
+.lion-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.videos {
+  display: flex;
+  gap: 10px;
 }
 
 .background-video {
   width: 100%; /* Ajuste selon vos besoins, par exemple 50% */
-  max-width: 250px; /* Taille maximale pour limiter l'élargissement */
+  max-width: 200px; /* Taille maximale pour limiter l'élargissement */
   height: auto; /* Maintient le ratio d'aspect */
   border-radius: 5px; /* Optionnel : ajoute un effet de coin arrondi */
   object-fit: cover; /* Assure le bon ajustement dans le conteneur */
   border: 2px solid white;
-  margin: 0 50px;
+}
+
+.lion-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.lion-image img {
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -749,6 +787,12 @@
   }
 }
 
+@media screen and (max-width: 930px) {
+  .proposx p {
+    margin: 20px;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .pic-item {
     display: grid;
@@ -781,11 +825,27 @@
     width: 100%;
     height: auto; /* Assure que l'image garde ses proportions */
   }
-}
 
-@media screen and (max-width: 930px) {
-  .proposx p {
-    margin: 20px;
+  .lion-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .videos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .background-video {
+    margin-bottom: 20px;
+  }
+
+  .lion-image img {
+    width: 300px;
+    height: auto;
+    margin: 40px 0 -40px;
   }
 }
 

@@ -33,6 +33,9 @@ import taureau1 from "../Pics/Taureau.webp";
 import taureau from "../Pics/taureau2.webp";
 import lion from "../Vidéos/lion.mp4";
 import lion2 from "../Vidéos/lion2.mp4";
+import taureau3 from "../Pics/taureau3.jpg";
+import taureau4 from "../Pics/taureau4.jpg";
+import lion3 from "../Pics/lion3.jpg";
 
 const Chantournage = () => {
   const [enlargedImage, setEnlargedImage] = useState(null);
@@ -303,6 +306,35 @@ const Chantournage = () => {
     updateEnlargedImage9(prevIndex);
   };
 
+  const images10 = [taureau3, taureau4];
+  const [enlargedImage10, setEnlargedImage10] = useState(null);
+  const [currentIndex10, setCurrentIndex10] = useState(0);
+
+  const updateEnlargedImage10 = (index) => {
+    if (Number.isInteger(index) && index >= 0 && index < images10.length) {
+      setCurrentIndex10(index);
+      setEnlargedImage10(images10[index]);
+    }
+  };
+
+  // Gestion des clics
+  const handleImageClick10 = (index) => updateEnlargedImage10(index);
+
+  // Ferme l'image agrandie
+  const handleCloseImage10 = () => setEnlargedImage10(null);
+
+  // Navigue vers l'image suivante
+  const handleNextImage10 = () => {
+    const nextIndex = (currentIndex10 + 1) % images10.length;
+    updateEnlargedImage10(nextIndex);
+  };
+
+  // Navigue vers l'image précédente
+  const handlePrevImage10 = () => {
+    const prevIndex = (currentIndex10 - 1 + images10.length) % images10.length;
+    updateEnlargedImage10(prevIndex);
+  };
+
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -459,7 +491,7 @@ const Chantournage = () => {
               </div>
             )}
             <div className="cerf-text">
-              <p>Contreplaqué, brou de noix,</p> <p>vernis aquaréthane</p>
+              <p>Contreplaqué, brou de noix,</p> <p>vernis acrylique</p>
             </div>
             <p>Dimensions : L 46 x l 39 cm x p 4 cm</p>
             <p>Prix : 95€</p>
@@ -495,7 +527,7 @@ const Chantournage = () => {
             )}
             <div className="cerf-text">
               <p>Contreplaqué, brou de noix,</p>
-              <p> vernis aquarétane</p>
+              <p> vernis acrylique</p>
             </div>
             <p>Dimensions: L51 x l 37,5 x p 5 cm</p>
             <p>Prix : 130€</p>
@@ -533,8 +565,7 @@ const Chantournage = () => {
                 </div>
               </div>
             )}
-            <p>Contreplaqué, brou de noix, peinture,</p>{" "}
-            <p>vernis aquarétane</p>
+            <p>Contreplaqué, brou de noix, peinture,</p> <p>vernis acrylique</p>
             <p>Dimensions : L 37 x l 24 x p 5 cm</p>
             <p>Prix : 140€</p>
           </div>
@@ -567,7 +598,7 @@ const Chantournage = () => {
               </div>
             )}
             <p>Contreplaqué, brou de noix, acrylique noire, </p>
-            <p>vernis aquarétane</p>
+            <p>vernis acrylique</p>
             <p>Dimensions: L 37 x l 24 x p 5 cm</p>
             <p>Prix : 140€</p>
           </div>
@@ -575,14 +606,14 @@ const Chantournage = () => {
         <div className="items3">
           <h3>Le Taureau</h3>
         </div>
-        <div className="pic-item4">
+        <div className="pic-item">
           <div className="image-item">
             {images5.map((img, index) => (
               <img
                 key={index}
                 src={img}
-                width="436px"
-                height="633px"
+                width="450px"
+                height="600px"
                 alt={`taueau${index + 1}`}
                 onClick={() => handleImageClick5(index)}
                 loading="lazy"
@@ -606,44 +637,101 @@ const Chantournage = () => {
             )}
             <div className="cerf-text">
               <p>Contreplaqué, brou de noix,</p>
-              <p> vernis aquarétane</p>
+              <p> vernis acrylique</p>
             </div>
             <p>Dimensions : L 48 x l 58 x p 6 cm</p>
             <p>Prix : 250€</p>
           </div>
-        </div>
-
-        <div className="lion">
-          <div className="items3">
-            <h3>Le Lion</h3>
-          </div>
-          <video
-            autoPlay
-            muted
-            loop
-            className="background-video"
-            onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
-          >
-            <source src={lion} type="video/mp4" />
-            Votre navigateur ne prend pas en charge les vidéos.
-          </video>
-          <video
-            autoPlay
-            muted
-            loop
-            className="background-video"
-            onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
-          >
-            <source src={lion2} type="video/mp4" />
-            Votre navigateur ne prend pas en charge les vidéos.
-          </video>
           <div className="image-item">
+            {images10.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                width="450px"
+                height="600px"
+                alt={`taueau${index + 1}`}
+                onClick={() => handleImageClick10(index)}
+                loading="lazy"
+              />
+            ))}
+            {enlargedImage10 && (
+              <div className="overlay">
+                <div className="enlarged-image-container">
+                  <button className="prev-button" onClick={handlePrevImage10}>
+                    ⬅
+                  </button>
+                  <img src={enlargedImage10} alt="Enlarged loup" />
+                  <button className="next-button" onClick={handleNextImage10}>
+                    ➡
+                  </button>
+                  <button className="close-button" onClick={handleCloseImage10}>
+                    ✖
+                  </button>
+                </div>
+              </div>
+            )}
             <div className="cerf-text">
               <p>Contreplaqué, brou de noix,</p>
-              <p> vernis aquarétane</p>
+              <p> vernis acrylique</p>
             </div>
-            <p>Dimensions : L 56 x l 42 x p 6,5 cm</p>
-            <p>Prix : 360€</p>
+            <p>Dimensions : L 40 x l 36 x p 6 cm</p>
+            <p>Prix : 290€</p>
+          </div>
+        </div>
+        <div className="items3">
+          <h3>Le Lion</h3>
+        </div>
+        <div className="lion-grid">
+          <div className="lion-content">
+            <div className="videos">
+              <video
+                autoPlay
+                muted
+                loop
+                className="background-video"
+                onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
+              >
+                <source src={lion} type="video/mp4" />
+                Votre navigateur ne prend pas en charge les vidéos.
+              </video>
+              <video
+                autoPlay
+                muted
+                loop
+                className="background-video"
+                onContextMenu={(e) => e.preventDefault()} // Désactive le clic droit
+              >
+                <source src={lion2} type="video/mp4" />
+                Votre navigateur ne prend pas en charge les vidéos.
+              </video>
+            </div>
+            <div className="image-item20">
+              <div className="cerf-text">
+                <p>Contreplaqué, brou de noix,</p>
+                <p>vernis acrylique</p>
+              </div>
+              <p>Dimensions : L 56 x l 42 x p 6,5 cm</p>
+              <p>Prix : 360€</p>
+            </div>
+          </div>
+          <div className="lion-image">
+            <img
+              src={lion3}
+              alt="bibliothèque dessin"
+              width="450px"
+              height="600px"
+              onClick={() => handleImageClick(lion3)}
+              loading="lazy"
+            />
+
+            <div className="image-item20">
+              <div className="cerf-text">
+                <p>Contreplaqué, brou de noix,</p>
+                <p>vernis acrylique</p>
+              </div>
+              <p>Dimensions : L 56 x l 42 x p 6,5 cm</p>
+              <p>Prix : 360€</p>
+            </div>
           </div>
         </div>
         <div className="proposx">

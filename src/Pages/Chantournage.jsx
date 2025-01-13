@@ -727,10 +727,10 @@ const Chantournage = () => {
             <div className="image-item20">
               <div className="cerf-text">
                 <p>Contreplaqué, brou de noix,</p>
-                <p>vernis acrylique</p>
               </div>
-              <p>Dimensions : L 56 x l 42 x p 6,5 cm</p>
-              <p>Prix : 360€</p>
+              <p>vernis acrylique et œil en verre</p>
+              <p>Dimensions : L 37 x l 28 x p 5 cm</p>
+              <p>Prix : 250€</p>
             </div>
           </div>
         </div>

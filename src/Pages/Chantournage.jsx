@@ -597,7 +597,7 @@ const Chantournage = () => {
                 </div>
               </div>
             )}
-            <p>Contreplaqué, brou de noix, acrylique noire, </p>
+            <p>Contreplaqué, brou de noix, peinture noire, </p>
             <p>vernis acrylique</p>
             <p>Dimensions: L 37 x l 24 x p 5 cm</p>
             <p>Prix : 140€</p>

@@ -8,11 +8,15 @@ export default defineConfig({
     target: "es2020",
     minify: "esbuild",
     cssCodeSplit: true,
-    polyfillDynamicImport: false, // option si tu ne souhaites pas le polyfill de dynamic import
+    assetsInlineLimit: 4096,
+    modulePreload: {
+      polyfill: false,
+    },
     rollupOptions: {
       output: {
         manualChunks: {
           react: ["react", "react-dom"],
+          // Si tu fais des imports à la carte, ceci peut être supprimé
           fontawesome: [
             "@fortawesome/fontawesome-svg-core",
             "@fortawesome/free-solid-svg-icons",

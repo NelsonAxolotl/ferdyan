@@ -26,7 +26,7 @@ const Home = () => {
                   alt="escalier"
                   width="600"
                   height="400"
-                  loading="lazy"
+                  fetchpriority="high"
                 />
                 <div className="image-text">Création sur mesure</div>
               </Link>

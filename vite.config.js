@@ -5,9 +5,10 @@ import { visualizer } from "rollup-plugin-visualizer";
 export default defineConfig({
   plugins: [react(), visualizer({ open: true })],
   build: {
-    target: "es2017",
+    target: "es2018",
     minify: "esbuild",
     cssCodeSplit: true,
+    polyfillDynamicImport: false, // option si tu ne souhaites pas le polyfill de dynamic import
     rollupOptions: {
       output: {
         manualChunks: {

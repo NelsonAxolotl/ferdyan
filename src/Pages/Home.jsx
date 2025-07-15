@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./Home.css";
 import commode from "../Pics/commode1.webp";
 import escalier from "../Pics/escaliers3.webp";
@@ -88,7 +90,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-facebook"></i>
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
             <div className="insta">
@@ -99,7 +101,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fa-brands fa-instagram"></i>
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
           </div>

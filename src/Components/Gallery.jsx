@@ -105,7 +105,7 @@ const Gallery = () => {
               src={image.src}
               alt={image.alt}
               className="gallery-image1"
-              width="300"
+              width="auto"
               height="500"
               loading="lazy"
               onClick={() => handleImageClick(image.src)}

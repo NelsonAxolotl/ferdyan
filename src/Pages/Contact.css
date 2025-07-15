@@ -51,7 +51,7 @@
   transition: opacity 0.5s ease;
 }
 
-.mail i {
+.mail svg {
   font-size: 1.5rem;
   color: rgb(126, 58, 58);
 }
@@ -107,7 +107,7 @@
   color: rgb(103, 101, 101);
 }
 
-.phone i {
+.phone svg {
   font-size: 1.5rem;
   color: rgb(126, 58, 58);
 }
@@ -152,14 +152,12 @@
   text-decoration: none;
 }
 
-/* Style pour les icônes au survol */
-.icons i:hover {
+.icons .svg-inline--fa:hover {
   transform: scale(1.1);
   color: rgb(126, 58, 58);
 }
 
-/* Style pour les icônes */
-.icons i {
+.icons .svg-inline--fa {
   color: grey;
   font-weight: normal;
   font-size: 2.5rem;

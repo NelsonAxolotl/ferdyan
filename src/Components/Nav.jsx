@@ -35,7 +35,13 @@ const Nav = () => {
         aria-label="Retour à l'accueil"
       >
         <Link to="/">
-          <img src={logo} alt="logo Ferdyan" width="600px" height="251px" />
+          <img
+            src={logo}
+            alt="logo Ferdyan"
+            width="600px"
+            height="251px"
+            loading="lazy"
+          />
         </Link>
       </div>
       <ul className="navbar-links">

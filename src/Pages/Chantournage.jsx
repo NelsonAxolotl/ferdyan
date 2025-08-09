@@ -367,7 +367,7 @@ const Chantournage = () => {
               to="https://fr.wikipedia.org/wiki/Visible_Human_Project"
               target="_blank"
             >
-              <span>« Visible Human Project »</span>
+              <span> «Visible Human Project»</span>
             </Link>
             . <br />
             Cette nouvelle vue tridimensionnelle du corps humain m’a fascinée.
@@ -925,9 +925,9 @@ const Chantournage = () => {
         </div>
         <div className="proposx">
           <p>
-            Les suspensions « Cerf » et « boules pailletées » peuvent accueillir
-            des photos de moments inoubliables en famille ou entre amis et créer
-            des souvenirs précieux. <br />
+            Les suspensions «Cerf» et «boules pailletées» peuvent accueillir des
+            photos de moments inoubliables en famille ou entre amis et créer des
+            souvenirs précieux. <br />
             Elles peuvent aussi devenir une tradition familiale en ajoutant
             chaque année de nouvelles photos. <br />
             Elles feront d’excellents cadeaux pour quelqu’un de spécial. Facile
